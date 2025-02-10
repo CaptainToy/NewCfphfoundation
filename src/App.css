@@ -2,3 +2,6 @@ body, input, textarea, select, button {
     font-size: 12px;
     font-family: sans-serif;
 }
+.text-con{
+    margin-bottom: -90px;
+}

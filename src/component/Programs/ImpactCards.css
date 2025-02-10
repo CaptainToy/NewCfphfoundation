@@ -150,43 +150,4 @@
   display: flex;
 }
 
-.impact-badge {
-  display: flex;
-  align-items: center;
-  color: white;
-  border-radius: 20px;
-  padding: 5px 12px;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  gap: 8px;
-  justify-content: center;
-}
 
-.badge-icon {
-  background-color: #00E091;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  border: 1px solid black;
-  position: absolute;
-  right: 57.2rem;
-}
-
-.material-symbols-outlined {
-  font-size: 30px;
-}
-
-.badge-text {
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
-  margin: 0;
-  border: 1px solid black;
-  padding: 13px 30px;
-  border-radius: 20px;
-}

@@ -21,7 +21,7 @@ const ResultsSection2 = () => {
         </div>
 
         <div className="result2-text-content">
-          <span className="result2-section-tag">Empowering Education</span>
+          <span className="result2-section-tag">Medical Resources</span>
           <h3 className="result2-content-title">Building Brighter Futures Through Learning Opportunities</h3>
           <p className="result2-content-description">
             Our commitment to education has enabled thousands of children and adults to gain the skills and knowledge they need to thrive.

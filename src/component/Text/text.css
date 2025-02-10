@@ -1,0 +1,48 @@
+.impact-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .badge-icon {
+    background-color: #00E091;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  
+  .badge-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding: 6px 12px;
+    border-radius: 15px;
+  }
+  
+  .impact-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .impact-subtitle {
+    font-size: 16px;
+    color: #6c757d;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  
