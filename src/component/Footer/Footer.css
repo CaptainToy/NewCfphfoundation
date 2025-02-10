@@ -27,7 +27,7 @@
   }
   .footer-text {
     color: #333;
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 20px;
     line-height: 1.5;
   }
@@ -35,74 +35,98 @@
   .subscribe {
     display: flex;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 50px;
   }
   
   .subscribe input {
     width: 250px;
-    padding: 20px;
-    border: 1px solid #ddd;
+    padding: 20px 70px;
+    border: none;
     border-radius: 40px;
     outline: none;
+    font-size: 20px;
+    /* border: rgb(51, 51, 51); */
+    background: rgb(250, 250, 250);
   }
-  
+  .subscribe i{
+    position: absolute;
+    left: 12.8rem;
+    font-size: 25px;
+    background: white;
+    color: black;
+    padding: 7px;
+    border-radius: 50%;
+    margin: 0;
+    
+  }
   .subscribe button {
     background: black;
     color: white;
     border: none;
-    padding: 20px 60px;
+    padding: 20px 30px;
     border-radius: 40px;
-    margin-left: -40px;
+    margin-left: -70px;
     cursor: pointer;
+    font-size: 20px;
   }
   
   .footer-right {
     display: flex;
-    gap: 50px;
+    gap: 70px;
   }
   
   .links {
     display: flex;
-    gap: 40px;
+    gap: 70px;
   }
   
   .column h4 {
-    font-size: 14px;
+    font-size: 22px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
   
   .column a {
     display: block;
     text-decoration: none;
     color: black;
-    font-size: 14px;
-    margin-bottom: 5px;
+    font-size: 22px;
+    margin-bottom: 25px;
   }
   
-  .column a:hover {
-    text-decoration: underline;
-  }
+  /* .column a:hover {
+  } */
   
   hr {
     border: 0;
     border-top: 1px solid #ddd;
-    margin: 20px 0;
+    margin: 90px 0;
   }
   
   .footer-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: -30px;
   }
-  
+  .footer-bottom p{
+    font-size: 20px;
+  }
   .social-icons {
     display: flex;
-    gap: 15px;
+    gap: 20px;
   }
   
-  .social-icons i {
-    font-size: 18px;
+  .social-icons a {
+    font-size: 25px;
     cursor: pointer;
   }
-  
+  .social-icons .instagram {
+    color: rgb(193, 53, 132);
+}
+  .social-icons  .facebook {
+    color: rgb(24, 119, 242);
+}
+  .social-icons  .youtube {
+    color: red;
+}

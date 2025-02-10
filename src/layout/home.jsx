@@ -24,8 +24,8 @@ const Home =()=>{
             <div className="">
                 <Textcon/>
                 <CorporatePartnerships/>
-                <EducationPromo/>
             </div>
+            <EducationPromo/>
             <Textcon/>
             <TestimonialGrid/>
             <FAQ/>

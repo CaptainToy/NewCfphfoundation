@@ -1,19 +1,28 @@
 import React from "react";
 import "./header.css";
-
+import Logo from"../../assets/logo.png"
 const Header = () => {
   return (
     <div className="header-container">
 
       <nav className="header-navbar">
         <div className="header-logo">
-          <img src={"https://framerusercontent.com/images/SaTvdYYSpcU6FiQo1Ydw4khzJg.svg"} alt="Logo" />
+          <img src={Logo} alt="Logo" />
         </div>
         <div className="header-nav-links">
           <select className="header-dropdown">
-            <option>All Pages</option>
-            <option>Programs</option>
-            <option>Blogs</option>
+          <option value="All Pages">All Pages</option>
+            <option value="Programs">Programs</option>
+            <option value="Blogs">Blogs</option>
+            <option value="About us">About Us</option>
+            <option value="Donation">Donation</option>
+            <option value="Team">Team</option>
+            <option value="Blogs details">Blogs details</option>
+            <option value="Program details">Program details</option>
+            <option value="Review">Review</option>
+            <option value="Contact Us">Contact Us</option>
+            <option value="Privacy policy">Privacy policy</option>
+            <option value="404">404</option>
           </select>
           <button className="list">Programs</button>
           <button className="list blog">Blog</button>

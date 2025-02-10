@@ -13,6 +13,7 @@ const Footer = () => {
             Together, we can make a real impact in communities around the world.
           </p>
           <div className="subscribe">
+            <i class="bi bi-chat-square-text text-squ"></i>
             <input type="email" placeholder="Enter your email address" />
             <button>Subscribe</button>
           </div>
@@ -41,11 +42,11 @@ const Footer = () => {
       </div>
       <hr />
       <div className="footer-bottom">
-        <p>Copyright © 2024 Kindora. All Rights Reserved.</p>
+        <p>Copyright © 2025 Kindora. All Rights Reserved.</p>
         <div className="social-icons">
-          <i className="bi bi-x"></i>
-          <i className="bi bi-facebook"></i>
-          <i className="bi bi-linkedin"></i>
+            <a href=""><i class="bi bi-instagram instagram"></i></a>
+            <a href=""><i class="bi bi-facebook facebook"></i></a>
+            <a href=""><i class="bi bi-youtube youtube"></i></a>
         </div>
       </div>
     </footer>
