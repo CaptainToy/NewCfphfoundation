@@ -1,0 +1,70 @@
+.cards-container {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  justify-content: center;
+}
+
+.card {
+  width: 320px;
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+  color: black;
+  overflow: hidden;
+}
+
+.card-orange {
+  background-color: #FF8467;
+}
+
+.card-yellow {
+  background-color: #FFE37E;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  opacity: 0.9;
+}
+
+.card-orange .card-overlay {
+  background-color: #F28566;
+}
+
+.card-yellow .card-overlay {
+  background-color: #FFE08C;
+}
+
+.card-content {
+  position: relative;
+  z-index: 10;
+}
+
+.card-badge {
+  background-color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.card-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.card-highlight {
+  font-weight: normal;
+}
+
+.card-text {
+  font-size: 14px;
+  margin-top: 8px;
+}

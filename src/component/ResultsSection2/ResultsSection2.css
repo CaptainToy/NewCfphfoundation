@@ -1,0 +1,115 @@
+.result2-results-section {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.result2-results-header {
+    margin-bottom: 40px;
+}
+
+.result2-section-title {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.result2-section-subtitle {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.result2-results-content {
+    display: flex;
+    gap: 40px;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+.result2-image-container {
+    flex-shrink: 0; 
+}
+.result2-image-container img {
+    width: 600px;
+    height: auto;
+    border-radius: 60px;
+    object-fit: cover;
+}
+
+.result2-text-content {
+    margin-top: 80px;
+    flex: 1;
+}
+
+.result2-section-tag {
+    padding: 9px 15px;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.result2-content-title {
+    font-family: 'Poppins', sans-serif;
+    width: 700px;
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 12px;
+    margin-left: 40px;
+    line-height: 50px;
+}
+
+.result2-content-description {
+    font-family: 'Poppins', sans-serif;
+    width: 600px;
+    font-size: 20px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    margin-left: 40px;
+}
+
+.result2-stats-container {
+    border: 1px solid #ddd;
+    border-radius: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+    padding: 30px;
+    gap: 0;
+    margin: 70px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result2-stat-item {
+    /* text-align: center; */
+    flex: 1;
+    padding: 0 20px;
+}
+
+.result2-stat-icon {
+    font-size: 32px;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+.result2-stat-label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.result2-stat-value {
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+}
