@@ -7,7 +7,7 @@ const testimonials = [
     company: 'waves',
     image: 'https://framerusercontent.com/images/ErbmgkTkdj4QiwxhvrYrPXGIZM.svg', 
     quote: 'This charity provided critical medical aid to our community. The healthcare support.',
-    star: 3,
+    star: 5,
   },
   {
     name: 'Madison Carter',
@@ -21,7 +21,7 @@ const testimonials = [
     company: 'swift ',
     image: 'https://framerusercontent.com/images/ErbmgkTkdj4QiwxhvrYrPXGIZM.svg',
     quote: 'Their transparency inspires us to give more and make a bigger real impact together.',
-    star: 3,
+    star: 4,
   },
   {
     name: 'Kendall Monroe',
@@ -52,7 +52,11 @@ const TestimonialGrid = () => {
       {testimonials.map((testimonial, index) => (
         <div key={index} className="testimonial-card">
           <div className="stars">
-            {[...Array(5)].map((_, i) => <span key={i} className="star">&#9733;</span>)} 
+            {[...Array(5)].map((_, i) => (
+              <span key={i} className={i < testimonial.star ? "star active" : "star inactive"}>
+                &#9733;
+              </span>
+            ))}
           </div>
           <p className="quote">"{testimonial.quote}"</p>
           <div className="testimonial-info">

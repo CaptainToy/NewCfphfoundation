@@ -7,6 +7,8 @@ import Textcon from "../component/Text/text"
 import CorporatePartnerships from "../component/CorporatePartnerships/CorporatePartnerships"
 import EducationPromo from "../component/EducationPromo/EducationPromo"
 import TestimonialGrid from "../component/testimonials/testimonials"
+import FAQ from "../component/FAQ/FAQ"
+import Footer from "../component/Footer/Footer"
 
 const Home =()=>{
     return(
@@ -22,10 +24,12 @@ const Home =()=>{
             <div className="">
                 <Textcon/>
                 <CorporatePartnerships/>
-                {/* <EducationPromo/> */}
+                <EducationPromo/>
             </div>
             <Textcon/>
             <TestimonialGrid/>
+            <FAQ/>
+            <Footer/>
         </>
     )
 }

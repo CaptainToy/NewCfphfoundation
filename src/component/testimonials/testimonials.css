@@ -22,12 +22,20 @@
 }
 
 .stars {
-    color: #fee581;
     font-size: 40px;
     display: flex; 
     justify-content: flex-start;
 }
 
+  
+  .active {
+    color: #fee581;
+  }
+  
+  .inactive {
+    color: #e2dfdf;
+  }
+  
 .quote {
     font-size: 30px;
     color: #333;
