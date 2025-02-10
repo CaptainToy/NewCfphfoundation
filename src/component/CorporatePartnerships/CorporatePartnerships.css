@@ -1,0 +1,96 @@
+body {
+    --token-96b06de6-276f-47e3-a541-f01772f9ea0a: rgb(255, 255, 255);
+    --token-0a83fcf5-b3d4-464f-83bd-61e3a586db14: rgb(250, 250, 250);
+    --token-838f2938-1a37-48dd-ac42-9f49192f64f1: rgb(230, 230, 230);
+    --token-42eb5644-f375-4ec7-9f33-8ce4e4de06bc: rgb(80, 80, 80);
+    --token-46f3b392-d383-42bf-b1d7-1baf378dae55: rgb(3, 3, 3);
+    --token-817125d9-1adf-413c-a82d-90eac0caff3a: #fee581;
+    --token-79ce2f46-8a3b-4cb3-82e0-42f0912b884d: rgb(17, 17, 17);
+    --token-e22edf02-5e02-45f8-a07e-e6318256fc74: #ff8e6c;
+    --token-a06d83b4-d5b5-4207-9f35-db685116ca3a: #52db82;
+}
+.CorporatePartnerships-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+    padding: 10px 200px;
+    align-items: center;
+  }
+  
+  .CorporatePartnerships-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    padding: 40px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+  }
+  
+  .CorporatePartnerships-icon {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: white;
+    font-size: 24px;
+    margin: 0 auto 10px;
+  }
+  
+  .CorporatePartnerships-green {
+    background-color: #52db82;
+  }
+  
+  .CorporatePartnerships-yellow {
+    background-color: #fee581;
+  }
+  
+  .CorporatePartnerships-orange {
+    background-color: #ff8e6c;
+  }
+  
+  .CorporatePartnerships-red {
+    background-color: #ff8e6c;
+  }
+  
+  .CorporatePartnerships-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(3, 3, 3);
+    font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+
+  }
+  
+  
+  .CorporatePartnerships-description {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+
+  }
+  
+  .CorporatePartnerships-button {
+    padding: 20px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    color: rgb(17, 17, 17);
+    font-size: 15px;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .CorporatePartnerships-button:hover {
+    color: white;
+    background: #52db82;
+  }
+  

@@ -50,7 +50,7 @@
 
 /* Background Colors */
 .red-bg {
-  background-color: #e63946;
+  background-color: rgb(255, 142, 108);
 }
 
 .black-bg {
@@ -58,7 +58,7 @@
 }
 
 .yellow-bg {
-  background-color: #f4a261;
+  background-color: #fee581;
 }
 
 /* Number Styling */

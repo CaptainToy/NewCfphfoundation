@@ -1,0 +1,59 @@
+/* EducationPromo.css */
+.education-promo-container {
+    display: flex; /* Or grid, depending on your layout */
+    flex-direction: column; /* Or row, if you want text and button side-by-side */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 20px; /* Add some padding */
+    /* Add background image, colors, etc. based on your image */
+    background-image: url('https://framerusercontent.com/images/oEdp0eCeNQ9LkvOgjP6ONKKjLs0.png?scale-down-to=1024'); /* Example */
+    background-size: cover; /* Or contain, depending on your needs */
+    background-position: center;
+    color: white; /* Example text color - adjust based on your image */
+    text-align: center; /* Center the text */
+  }
+  
+  .text-content {
+    margin-bottom: 20px; /* Space between text and button */
+    /* Style your heading and paragraph here */
+  }
+  
+  .text-content h1 {
+    font-size: 2.5rem; /* Example */
+    margin-bottom: 10px;
+  }
+  
+  .text-content p {
+    font-size: 1.2rem; /* Example */
+    line-height: 1.5; /* Example */
+    max-width: 600px; /* Example - adjust as needed */
+  }
+  
+  .cta-button button {
+    background-color: #007bff; /* Example - use your brand color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .cta-button button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  /* Make it responsive */
+  @media (max-width: 768px) {
+    .education-promo-container {
+      flex-direction: column; /* Stack on smaller screens */
+      text-align: center;
+    }
+    .text-content h1 {
+      font-size: 2rem;
+    }
+    .text-content p {
+      font-size: 1rem;
+    }
+  }

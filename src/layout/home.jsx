@@ -3,7 +3,10 @@ import ImpactCards from "../component/Programs/ImpactCards"
 import ResultsSection from "../component/ResultsSection/ResultsSection"
 import ResultsSection2 from "../component/ResultsSection2/ResultsSection2"
 import Success from "../component/FundingCards/FundingCards"
-import Text from "../component/Text/text"
+import Textcon from "../component/Text/text"
+import CorporatePartnerships from "../component/CorporatePartnerships/CorporatePartnerships"
+import EducationPromo from "../component/EducationPromo/EducationPromo"
+import TestimonialGrid from "../component/testimonials/testimonials"
 
 const Home =()=>{
     return(
@@ -12,8 +15,17 @@ const Home =()=>{
             <ImpactCards/>
             <ResultsSection/>
             <ResultsSection2/>
-            {/* <Text/> */}
-            <Success/>
+            <div className="">
+                <Textcon/>
+                <Success/>
+            </div>
+            <div className="">
+                <Textcon/>
+                <CorporatePartnerships/>
+                {/* <EducationPromo/> */}
+            </div>
+            <Textcon/>
+            <TestimonialGrid/>
         </>
     )
 }

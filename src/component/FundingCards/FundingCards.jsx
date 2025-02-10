@@ -8,6 +8,7 @@ const FundingCards = () => {
       <div className="card card-orange">
         <div className="card-overlay"></div>
         <div className="card-content">
+          
           <span className="card-badge">BY 2023</span>
           <h2 className="card-title">$12<span className="card-highlight">Million</span></h2>
           <p className="card-text">

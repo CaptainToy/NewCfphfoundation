@@ -1,7 +1,6 @@
-const Text = () => {
+const Textcon = () => {
     return (
       <div className="impact-container"> 
-      <Text/>
         <div className="impact-badge">
           <div className="impact-badge-icon">
             <span className="material-symbols-outlined">crown</span>
@@ -16,4 +15,4 @@ const Text = () => {
     );
   };
   
-  export default Text;
+  export default Textcon;

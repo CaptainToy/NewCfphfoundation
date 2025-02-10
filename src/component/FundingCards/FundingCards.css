@@ -1,13 +1,21 @@
+:root {
+  --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+  --framer-font-family-bold: "Urbanist", "Urbanist Placeholder", sans-serif;
+  --framer-font-family-bold-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+  --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+}
+
 .cards-container {
   display: flex;
-  gap: 24px;
+  gap: 30px;
   padding: 24px;
   justify-content: center;
 }
 
 .card {
-  width: 320px;
-  border-radius: 16px;
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
   padding: 24px;
   position: relative;
   color: black;
@@ -15,30 +23,36 @@
 }
 
 .card-orange {
-  background-color: #FF8467;
+  background-image: url("https://framerusercontent.com/images/7OZtW9Eg3d8k5HedDXVJulTHGlk.png");
+  
 }
-
 .card-yellow {
-  background-color: #FFE37E;
+  background-image: url("https://framerusercontent.com/images/7ehFTDAW5eBlZkZfFvmmkX0Wtc.png");
+
 }
 
 .card-overlay {
   position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
   height: 50%;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   opacity: 0.9;
+  position:absolute;
+  border-radius:inherit;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0
+
 }
 
 .card-orange .card-overlay {
-  background-color: #F28566;
+  background-color: #f1714e;
 }
 
 .card-yellow .card-overlay {
-  background-color: #FFE08C;
+  background-color: #f5c645;
 }
 
 .card-content {
@@ -47,24 +61,31 @@
 }
 
 .card-badge {
-  background-color: white;
   padding: 4px 8px;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
+  font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+  margin-top: 20px;
 }
 
 .card-title {
-  font-size: 32px;
+  font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+  font-size: 55px;
   font-weight: bold;
-  margin-top: 8px;
+  margin-top: 40px;
+  margin-bottom: -2px;
 }
 
 .card-highlight {
   font-weight: normal;
+  font-weight: bold;
+  font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
 }
 
 .card-text {
   font-size: 14px;
   margin-top: 8px;
+  color: #030303;
+  line-height: 1.5;
 }
