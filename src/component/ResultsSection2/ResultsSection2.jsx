@@ -22,14 +22,14 @@ const ResultsSection2 = () => {
 
         <div className="result2-text-content">
           <span className="result2-section-tag">Medical Resources</span>
-          <h3 className="result2-content-title">Building Brighter Futures Through Learning Opportunities</h3>
+          <h3 className="result2-content-title">Delivering Vital Health Resources to Those in Need</h3>
           <p className="result2-content-description">
-            Our commitment to education has enabled thousands of children and adults to gain the skills and knowledge they need to thrive.
+          We believe that access to healthcare is a fundamental right. By providing medical aid, health education, and wellness resources.
           </p>
 
           <div className="result2-stats-container">
-            <StatItem icon="bi-building" label="Schools Partnered" value="100+" />
-            <StatItem icon="bi-mortarboard" label="Scholarships Awarded" value="800+" />
+            <StatItem icon="bi-building" label="Medical Kits Distributed" value="20K+" />
+            <StatItem icon="bi-mortarboard" label="Clinics Operated" value="800+" />
           </div>
         </div>
       </div>

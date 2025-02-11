@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.css"; // Import the CSS file
+import Logo from "../../assets/logo.png";
+
 
 const Footer = () => {
   return (
@@ -7,7 +9,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-left">
           <div className="logo">
-          <img src={"https://framerusercontent.com/images/SaTvdYYSpcU6FiQo1Ydw4khzJg.svg"} alt="Logo"className="logo-icon" />
+          <img src={Logo} alt="Logo"className="logo-icon" />
           </div>
           <p className="footer-text">
             Together, we can make a real impact in communities around the world.

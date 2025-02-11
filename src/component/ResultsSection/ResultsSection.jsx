@@ -12,18 +12,6 @@ const StatItem = ({ icon, label, value }) => (
 const ResultsSection = () => {
   return (
     <section className="results-section" aria-label="Impactful Programs Results">
-      <div className="results-header">
-        <div className="impact-badge">
-          <div className="badge-icon">
-            <i className="bi bi-award"></i> 
-          </div>
-          <p className="badge-text">Impactful Metrics</p>
-        </div>
-        <h2 className="impact-title">Programs that Change Lives</h2>
-        <p className="impact-subtitle">
-          Together, we can make a real impact in communities around the world. Help us bring hope and support.
-        </p>
-      </div>
 
       <div className="results-content">
         <div className="image-container">

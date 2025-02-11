@@ -7,15 +7,15 @@
 
 .cards-container {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   padding: 24px;
   justify-content: center;
 }
 
 .card {
-  width: 400px;
-  height: 200px;
-  border-radius: 15px;
+  width: 570px;
+  height: 280px;
+  border-radius: 30px;
   padding: 24px;
   position: relative;
   color: black;
@@ -24,11 +24,14 @@
 
 .card-orange {
   background-image: url("https://framerusercontent.com/images/7OZtW9Eg3d8k5HedDXVJulTHGlk.png");
+  background-position: center;
+  background-size: cover;
   
 }
 .card-yellow {
   background-image: url("https://framerusercontent.com/images/7ehFTDAW5eBlZkZfFvmmkX0Wtc.png");
-
+  background-position: center;
+  background-size: cover;
 }
 
 .card-overlay {
@@ -46,35 +49,36 @@
   left:0
 
 }
-
+/* 
 .card-orange .card-overlay {
   background-color: #f1714e;
 }
 
 .card-yellow .card-overlay {
   background-color: #f5c645;
-}
+} */
 
 .card-content {
   position: relative;
   z-index: 10;
+  margin-top: 40px;
+
 }
 
 .card-badge {
   padding: 4px 8px;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 23px;
   font-weight: bold;
   font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
-  margin-top: 20px;
 }
 
 .card-title {
   font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
-  font-size: 55px;
+  font-size: 65px;
   font-weight: bold;
-  margin-top: 40px;
-  margin-bottom: -2px;
+  margin-top: 20px;
+  margin-bottom: -10px;
 }
 
 .card-highlight {
@@ -84,8 +88,8 @@
 }
 
 .card-text {
-  font-size: 14px;
-  margin-top: 8px;
-  color: #030303;
-  line-height: 1.5;
+  font-size: 16px;
+  margin-top: 40px;
+  color: #333;
+  line-height: 1.7;
 }

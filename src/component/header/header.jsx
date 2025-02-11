@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link for navigation
 import "./header.css";
 import Logo from "../../assets/logo.png";
 import IMG1 from "../../assets/imglolz.jpg";
@@ -20,22 +21,22 @@ const Header = () => {
       <nav className="header-navbar">
         {/* Logo on the left */}
         <div className="header-logo">
-          <img src={Logo} alt="Logo" />
+          <Link to="/">
+            <img src={Logo} alt="Logo" />
+          </Link>
         </div>
 
         {/* Navigation Links */}
-        <div
-          className={`header-nav-links ${showMobileMenu ? "mobile-menu-open" : ""}`}
-        >
+        <div className={`header-nav-links ${showMobileMenu ? "mobile-menu-open" : ""}`}>
           <div className="mobile-menu-close" onClick={handleMobileMenuClick}>
             <i className="bi bi-x-lg"></i> {/* Close Icon */}
           </div>
           <button className="header-dropdown" onClick={handleDropdownClick}>
             All Pages <i className="bi bi-arrow-down-short"></i>
           </button>
-          <button className="list">Programs</button>
-          <button className="list blog">Blog</button>
-          <button className="header-donate-btn">Donate Now</button>
+          <Link to="/programs" className="list">Programs</Link>
+          <Link to="/blog" className="list blog">Blog</Link>
+          <Link to="/donate" className="header-donate-btn">Donate Now</Link>
         </div>
 
         {/* Hamburger Menu on the right */}
@@ -50,17 +51,17 @@ const Header = () => {
       {showAllPages && (
         <div className="all-pages-container">
           <div className="all-pages-grid">
-            <span>Home</span>
-            <span>Donation</span>
-            <span>Team</span>
-            <span>About us</span>
-            <span>Blogs</span>
-            <span>Contact Us</span>
-            <span>Programs</span>
-            <span>Blog Details</span>
-            <span>Privacy Policy</span>
-            <span>Program Details</span>
-            <span>Review</span>
+            <Link to="/">Home</Link>
+            <Link to="/donation">Donation</Link>
+            <Link to="/team">Team</Link>
+            <Link to="/about">About Us</Link>
+            <Link to="/blogs">Blogs</Link>
+            <Link to="/contact">Contact Us</Link>
+            <Link to="/programs">Programs</Link>
+            <Link to="/blog-details">Blog Details</Link>
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/program-details">Program Details</Link>
+            <Link to="/review">Review</Link>
           </div>
         </div>
       )}
@@ -83,13 +84,13 @@ const Header = () => {
             </p>
           </div>
           <div className="header-buttons">
-            <button className="header-donate-btn">
+            <Link to="/donate" className="header-donate-btn">
               Donate Now
               <div className="icon-container">
                 <i className="bi bi-arrow-right-circle"></i>
               </div>
-            </button>
-            <button className="header-learn-btn">Learn More</button>
+            </Link>
+            <Link to="/learn-more" className="header-learn-btn">Learn More</Link>
           </div>
           <div className="header-partners">
             <span>Our most loved partners</span>

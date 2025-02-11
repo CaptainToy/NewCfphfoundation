@@ -1,3 +1,5 @@
+import React from "react"
+import "../App.css"
 import Header from "../component/header/header"
 import ImpactCards from "../component/Programs/ImpactCards"
 import ResultsSection from "../component/ResultsSection/ResultsSection"
@@ -10,6 +12,7 @@ import TestimonialGrid from "../component/testimonials/testimonials"
 import FAQ from "../component/FAQ/FAQ"
 import Footer from "../component/Footer/Footer"
 import DonationComponent from "../component/DonationComponent/DonationComponent"
+
 
 const Home = () => {
     return (
@@ -24,11 +27,19 @@ const Home = () => {
                 />
            </div>
             <ImpactCards />
+            <div className="text-con">
+                <Textcon
+                    icon="crown"
+                    badgeText="Impactful metrics"
+                    title="Ways you can make a difference"
+                    subtitle="Together, we can make a real impact in communities around the world. Help us bring hope and support."
+                />
+           </div>
             <ResultsSection />
             <ResultsSection2 />
             <div className="">
                 <Textcon
-                    icon="hand_holding_heart" // Example icon
+                    icon="bi bi-bookmark-tree" // Example icon
                     badgeText="Funding Initiatives"
                     title="Supporting Our Mission"
                     subtitle="Your contributions make a significant difference in the lives of those we serve."
@@ -37,21 +48,27 @@ const Home = () => {
             </div>
             <div className="">
                 <Textcon
-                    icon="business" // Example icon
+                    icon="business"
                     badgeText="Strategic Partnerships"
-                    title="Collaborating for Change"
+                    title="Ways you can make a difference"
                     subtitle="We partner with corporations to amplify our impact and reach more communities."
                 />
                 <CorporatePartnerships />
             </div>
             <EducationPromo />
-            <Textcon
-                icon="school" // Example icon
-                badgeText="Educational Programs"
-                title="Empowering Through Education"
-                subtitle="We believe that education is a key to unlocking potential and creating lasting change."
-            />
-            <TestimonialGrid />
+
+            <div className="text-content-con">
+                <Textcon
+                    icon="school"
+                    badgeText="Voices of Support"
+                    title="Hear from those who believe in our mission"
+                    subtitle="Together, we can make a real impact in communities around the world. Help us bring hope and support."
+                />
+            </div>
+                <TestimonialGrid />
+
+
+            <div style={{marginTop:"100px"}}></div>
             <DonationComponent />
             <FAQ />
             <Footer />
