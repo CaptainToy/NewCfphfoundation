@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Team.css';
-import AuntyTayo from '../assets/AuntyTayo.jpg';
-import Bandy from '../assets/bandy.jpg';
-import Tayo from '../assets/tayp.jpg';
-import Pesinpapa from "../assets/IMG_0282 (1).png";
+import AuntyTayo from '../../assets/AuntyTayo.jpg';
+import Bandy from '../../assets/bandy.jpg';
+import Tayo from '../../assets/tayp.jpg';
+import Pesinpapa from "../../assets/IMG_0282 (1).png";
 
 const Team = ({ team = [] }) => {
-  // Default team members in case 'team' prop is empty
   const defaultTeam = [
     {
       name: 'Dele Oduyemi',
@@ -41,7 +40,6 @@ const Team = ({ team = [] }) => {
 
   return (
     <div className="testimonial-container">
-      <h2 className="title">Team<span className="highlight">.</span></h2>
       <div className="home-container">
         {(team.length > 0 ? team : defaultTeam).map((member, index) => (
           <div className="profile-card" key={index}>

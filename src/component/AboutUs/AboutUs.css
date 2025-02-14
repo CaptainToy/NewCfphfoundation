@@ -1,0 +1,77 @@
+.aboutus-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .aboutus-content {
+    display: flex;
+    max-width: 100%;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  .aboutus-con{
+    margin-top: 60px;
+  }
+  .about-us-fill{
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .aboutus-badge {
+    display: inline-block;
+    justify-content: flex-start;
+    background: #ffe082;
+    color: #333;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+  }
+  
+  .aboutus-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+    text-align: left;
+    /* margin-left: 150px; */
+    width: 600px;
+  }
+  
+  .aboutus-text {
+    font-size: 18px;
+    color: #666;
+    width: 450px;
+    /* margin: 15px 0; */
+  }
+  
+  .aboutus-learn-more {
+    display: flex;
+    background-color: #000;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s ease;
+  }
+  
+  .aboutus-learn-more:hover {
+    background-color: #444;
+  }
+  
+  .aboutus-image {
+    max-width: 100%;
+    width: 80%;
+  }
+  
+  .aboutus-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
