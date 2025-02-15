@@ -6,6 +6,7 @@ const AboutUs = () => {
     <section className="aboutus-section">
       <div className="aboutus-content">
         <div className="about-us-fill">
+            <i className="bi bi-bookmark-check"></i>
             <span className="aboutus-badge">About Us</span>
             <h1 className="aboutus-title">Know about our mission, vision, and journey</h1>
         </div>

@@ -1,0 +1,82 @@
+:root{
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+        --framer-font-family-bold: "Urbanist", sans-serif;
+        --framer-font-family-bold-italic: "Urbanist", sans-serif;
+        --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+        --framer-font-open-type-features: "blwf" on, "cv09" on, "cv03" on, "cv04" on, "cv11" on;
+        --framer-font-size: 36px;
+        --framer-font-style: normal;
+        --framer-font-style-bold: normal;
+        --framer-font-style-bold-italic: italic;
+        --framer-font-style-italic: italic;
+        --framer-font-variation-axes: normal;
+        --framer-font-weight: 700;
+        --framer-font-weight-bold: 900;
+        --framer-font-weight-bold-italic: 900;
+        --framer-font-weight-italic: 700;
+        --framer-letter-spacing: -1px;
+        --framer-line-height: 1.2em;
+        --framer-paragraph-spacing: 0px;
+        --framer-text-alignment: start;
+        --framer-text-color: #000000;
+        --framer-text-decoration: none;
+        --framer-text-stroke-color: initial;
+        --framer-text-stroke-width: initial;
+        --framer-text-transform: none;
+    
+}
+.StatsComponent-counterContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    width: 1200px;
+    margin: 0 auto; 
+    border-radius: 40px;
+    background-image: url("https://framerusercontent.com/images/7ehFTDAW5eBlZkZfFvmmkX0Wtc.png");
+    background-position: center;
+    background-size: cover;
+}
+  .StatsComponent-counterWrapper {
+    width: 250px;
+    text-align: center;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+  }  
+  .StatsComponent-counterCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .StatsComponent-counter {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .StatsComponent-counterNumber {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    text-align: left;
+    margin-right: 5px;
+  }
+  
+  .StatsComponent-counterUnit {
+    text-align: left;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    /* color: #666; */
+  }
+  
+  .StatsComponent-counterDescription {
+    text-align: left;
+    font-size: 15px;
+    margin-top: -12px;
+  }
+  

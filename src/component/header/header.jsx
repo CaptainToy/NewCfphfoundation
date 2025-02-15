@@ -51,17 +51,14 @@ const Header = () => {
       {showAllPages && (
         <div className="all-pages-container">
           <div className="all-pages-grid">
-            <Link to="/">Home</Link>
-            <Link to="/donation">Donation</Link>
-            <Link to="/team">Team</Link>
-            <Link to="/about">About Us</Link>
-            <Link to="/blogs">Blogs</Link>
-            <Link to="/contact">Contact Us</Link>
-            <Link to="/programs">Programs</Link>
-            <Link to="/blog-details">Blog Details</Link>
-            <Link to="/privacy-policy">Privacy Policy</Link>
-            <Link to="/program-details">Program Details</Link>
-            <Link to="/review">Review</Link>
+            <Link to="/" className="textrun">Home</Link>
+            <Link to="/donation"className="textrun">Donation</Link>
+            <Link to="/team" className="textrun">Team</Link>
+            <Link to="/about" className="textrun">About Us</Link>
+            <Link to="/blogs" className="textrun">Blogs</Link>
+            <Link to="/contact" className="textrun">Contact Us</Link>
+            <Link to="/programs" className="textrun">Programs</Link>
+            <Link to="/review" className="textrun">Review</Link>
           </div>
         </div>
       )}
@@ -70,11 +67,14 @@ const Header = () => {
       <div className="header-content">
         <div className="header-left-section">
           <div className="header-info">
-            <img
-              src="https://i.pinimg.com/736x/99/5d/2e/995d2e144f77c537fd5b1fb6168d96d1.jpg"
-              alt="1000+ Donor active members"
-              className="header-donor-img"
-            />
+          <div className="flex flex-col items-center justify-center">
+	          <div className="flex -space-x-3">
+		          <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src="https://source.unsplash.com/30x30/?portrait?1" />
+		          <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src="https://source.unsplash.com/30x30/?portrait?2" />
+		          <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src="https://source.unsplash.com/30x30/?portrait?3" />
+		          <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src="https://source.unsplash.com/30x30/?portrait?4" />
+	        </div>
+        </div>
             <span>100+ Donor active members</span>
           </div>
           <div className="header-text">

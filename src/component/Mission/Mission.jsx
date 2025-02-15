@@ -9,7 +9,7 @@ const StatItem = ({ icon, label, value }) => (
   </div>
 );
 
-const Mission = () => {
+const Mission = ({title, topic, discription}) => {
   return (
     <section className="mission-results-section" aria-label="Impactful Programs Results">
       <div className="mission-results-content">
@@ -21,11 +21,9 @@ const Mission = () => {
         </div>
 
         <div className="mission-text-content">
-          <span className="mission-section-tag">Our Mission</span>
-          <h3 className="mission-content-title">Delivering Vital Health Resources to Those in Need</h3>
-          <p className="mission-content-description">
-          To alleviate hunger and malnutrition in our community by providing food assistance to vulnerable individuals and families.
-          </p>
+          <span className="mission-section-tag">{title}</span>
+          <h3 className="mission-content-title">{topic}</h3>
+          <p className="mission-content-description">{discription}</p>
 
           <div className="mission-stats-container">
              <button>Make a Quick Donation</button>

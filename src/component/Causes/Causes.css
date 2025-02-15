@@ -1,0 +1,128 @@
+.causes-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 60px 20px;
+}
+
+.causes-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.causes-header {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.causes-badge-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.causes-badge {
+    /* background: #ffe082; */
+    color: #333;
+    font-size: 14px;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.causes-title {
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+    width: 600px;
+    line-height: 1.10;
+}
+
+.cause-card {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 100%;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    width: 100%;
+    gap: 30px;
+}
+
+.cause-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cause-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.cause-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000;
+}
+
+.cause-description {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.cause-donate-btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cause-donate-btn:hover {
+    background: #444;
+}
+
+.cause-goal {
+    margin-top: 20px;
+}
+
+.goal-label {
+    font-size: 14px;
+    color: #777;
+}
+
+.cause-amount {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .causes-title {
+        font-size: 32px;
+        width: 100%;
+    }
+    
+    .cause-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .cause-image img {
+        width: 100%;
+    }
+}

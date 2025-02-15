@@ -30,12 +30,14 @@ const DonationComponent = () => {
           <div className="people-count">
             <h4>Total people involved</h4>
             <p>Building Brighter Futures Through Learning Opportunities</p>
-            <div className="header-info">
-            <img src="https://i.pinimg.com/736x/99/5d/2e/995d2e144f77c537fd5b1fb6168d96d1.jpg" alt="1000+ Donor active members" className="header-donor-img first" />
-            <img src="https://i.pinimg.com/736x/99/5d/2e/995d2e144f77c537fd5b1fb6168d96d1.jpg" alt="1000+ Donor active members" className="header-donor-img second" />
-            <img src="https://i.pinimg.com/736x/99/5d/2e/995d2e144f77c537fd5b1fb6168d96d1.jpg" alt="1000+ Donor active members" className="header-donor-img three" />
-          </div>
-            <p className="count">16K+ people</p>
+           <div className="flex flex-col items-center justify-center">
+	<div className="flex -space-x-1" style={{marginTop: "20px"}}>
+		<img alt="" className="w-10 h-10 border rounded-full dark:bg-gray-500 dark:border-gray-300" src="https://source.unsplash.com/40x40/?portrait?1" />
+		<img alt="" className="w-10 h-10 border rounded-full dark:bg-gray-500 dark:border-gray-300" src="https://source.unsplash.com/40x40/?portrait?2" />
+		<img alt="" className="w-10 h-10 border rounded-full dark:bg-gray-500 dark:border-gray-300" src="https://source.unsplash.com/40x40/?portrait?2" />
+		
+	</div>
+</div>
           </div>
           <div className="description">
             <p>Total people involved for vulnerable families and individuals</p>

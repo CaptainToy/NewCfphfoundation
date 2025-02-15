@@ -31,7 +31,7 @@ const ImpactCard = ({ number, text, description, bgColor, imgSrc, showIcon }) =>
       <div>
         <h2 className="impact-number">
           {isVisible ? <CountUp end={number} duration={2} /> : '0'}
-          {typeof number === 'number' ? 'k' : ''}
+          {typeof number === 'number' ? 'k' : '+'}
         </h2>
         <p className="impact-text">{text}</p>
       </div>
