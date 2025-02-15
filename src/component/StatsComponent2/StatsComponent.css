@@ -1,0 +1,94 @@
+:root {
+    --framer-font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-family-bold: "Urbanist", sans-serif;
+    --framer-font-family-bold-italic: "Urbanist", sans-serif;
+    --framer-font-family-italic: "Urbanist", "Urbanist Placeholder", sans-serif;
+    --framer-font-open-type-features: "blwf" on, "cv09" on, "cv03" on, "cv04" on, "cv11" on;
+    --framer-font-size: 36px;
+    --framer-font-style: normal;
+    --framer-font-style-bold: normal;
+    --framer-font-style-bold-italic: italic;
+    --framer-font-style-italic: italic;
+    --framer-font-variation-axes: normal;
+    --framer-font-weight: 700;
+    --framer-font-weight-bold: 900;
+    --framer-font-weight-bold-italic: 900;
+    --framer-font-weight-italic: 700;
+    --framer-letter-spacing: -1px;
+    --framer-line-height: 1.2em;
+    --framer-paragraph-spacing: 0px;
+    --framer-text-alignment: start;
+    --framer-text-color: #000000;
+    --framer-text-decoration: none;
+    --framer-text-stroke-color: initial;
+    --framer-text-stroke-width: initial;
+    --framer-text-transform: none;
+}
+
+body {
+    --token-96b06de6-276f-47e3-a541-f01772f9ea0a: rgb(255, 255, 255);
+    --token-0a83fcf5-b3d4-464f-83bd-61e3a586db14: rgb(250, 250, 250);
+    --token-838f2938-1a37-48dd-ac42-9f49192f64f1: rgb(230, 230, 230);
+    --token-42eb5644-f375-4ec7-9f33-8ce4e4de06bc: rgb(80, 80, 80);
+    --token-46f3b392-d383-42bf-b1d7-1baf378dae55: rgb(3, 3, 3);
+    --token-817125d9-1adf-413c-a82d-90eac0caff3a: rgb(254, 229, 129);
+    --token-79ce2f46-8a3b-4cb3-82e0-42f0912b884d: rgb(17, 17, 17);
+    --token-e22edf02-5e02-45f8-a07e-e6318256fc74: rgb(255, 142, 108);
+    --token-a06d83b4-d5b5-4207-9f35-db685116ca3a: rgb(82, 219, 130);
+}
+
+.stars-card-counterContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    width: 1200px;
+    margin: 0 auto; 
+    border-radius: 40px;
+    background-image: url("https://framerusercontent.com/images/7OZtW9Eg3d8k5HedDXVJulTHGlk.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.stars-card-counterWrapper {
+    width: 700px;
+    text-align: center;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}  
+
+.stars-card-counterCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.stars-card-counter {
+    display: flex;
+    align-items: baseline;
+}
+
+.stars-card-counterNumber {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+    text-align: left;
+    margin-right: 5px;
+}
+
+.stars-card-counterUnit {
+    text-align: left;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
+}
+
+.stars-card-counterDescription {
+    text-align: center;
+    font-size: 15px;
+    /* margin-top: -px; */
+}

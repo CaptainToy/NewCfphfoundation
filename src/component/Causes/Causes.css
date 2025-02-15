@@ -68,27 +68,30 @@
 }
 
 .cause-title {
-    font-size: 26px;
+    font-size: 40px;
     font-weight: bold;
-    color: #000;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .cause-description {
-    font-size: 16px;
+    width: 600px;
+    font-size: 20px;
     color: #555;
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 .cause-donate-btn {
     display: inline-block;
     background: black;
     color: white;
-    padding: 12px 20px;
+    padding: 12px 25px;
     font-size: 16px;
     border: none;
     border-radius: 25px;
     cursor: pointer;
     transition: 0.3s ease;
+    margin-bottom: 20px;
 }
 
 .cause-donate-btn:hover {
@@ -100,14 +103,14 @@
 }
 
 .goal-label {
-    font-size: 14px;
+    font-size: 20px;
     color: #777;
 }
 
 .cause-amount {
-    font-size: 22px;
+    font-size: 27px;
     font-weight: bold;
-    color: #000;
+    color: #333;
 }
 
 @media (max-width: 768px) {

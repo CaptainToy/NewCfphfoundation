@@ -4,6 +4,10 @@ import About from './layout/About';
 import Home from './layout/home';
 import Programs from "./layout/programs"
 import Error from "./component/404error/error"
+import Donation from './layout/donation';
+import Blog from "./layout/Blog"
+import Reviews from "./layout/Reviews"
+import Contact from './layout/Contact';
 
 function App() {
   return (
@@ -12,6 +16,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/programs" element={<Programs/>} />
+        <Route path="/donation" element={<Donation/>} />
+        <Route path="/blogs" element={<Blog/>} />
+        <Route path="/review" element={<Reviews/>} />
+        <Route path="/Contact" element={<Contact/>} />
         <Route path="/about" element="*" />
       </Routes>
     </Router>

@@ -35,8 +35,8 @@ const Header = () => {
             All Pages <i className="bi bi-arrow-down-short"></i>
           </button>
           <Link to="/programs" className="list">Programs</Link>
-          <Link to="/blog" className="list blog">Blog</Link>
-          <Link to="/donate" className="header-donate-btn">Donate Now</Link>
+          <Link to="/blogs" className="list blog">Blog</Link>
+          <Link to="/donation" className="header-donate-btn">Donate Now</Link>
         </div>
 
         {/* Hamburger Menu on the right */}
@@ -53,7 +53,6 @@ const Header = () => {
           <div className="all-pages-grid">
             <Link to="/" className="textrun">Home</Link>
             <Link to="/donation"className="textrun">Donation</Link>
-            <Link to="/team" className="textrun">Team</Link>
             <Link to="/about" className="textrun">About Us</Link>
             <Link to="/blogs" className="textrun">Blogs</Link>
             <Link to="/contact" className="textrun">Contact Us</Link>

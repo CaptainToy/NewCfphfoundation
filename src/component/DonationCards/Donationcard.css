@@ -1,0 +1,112 @@
+/* Container holding all donation cards */
+.donation-card-stat-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Individual donation card */
+.donation-card-stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the left */
+    max-width: 100%;
+    width: 400px;
+    height: 500px;
+    border-radius: 32px;
+    padding: 20px;
+    text-align: left;
+    opacity: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ensure text inside each card inherits the correct color */
+.donation-card-stat-title,
+.donation-card-stat-description,
+.donation-card-stat-price,
+.donation-card-stat-billing {
+    color: inherit; /* Text color will inherit from the parent */
+}
+
+/* Special styling for the black card (Medical Assistance) */
+.donation-card-stat[style*="rgb(0, 0, 0)"] {
+    color: white !important;
+}
+
+/* Ensure button on the black card is white with black text */
+.donation-card-stat[style*="rgb(0, 0, 0)"] .donation-card-stat-btn {
+    background-color: white;
+    color: black;
+}
+
+/* Align content properly inside the card */
+.donation-card-stat-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 20px;
+}
+
+/* Title styles */
+.donation-card-stat-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Description text */
+.donation-card-stat-description {
+    font-size: 20px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+/* Price container */
+.donation-card-stat-price-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Price styling */
+.donation-card-stat-price {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Billing details */
+.donation-card-stat-billing {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Button styles */
+.donation-card-stat-btn {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: 1px solid rgb(230, 230, 230);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+}
+
+/* Button hover effect */
+.donation-card-stat-btn:hover {
+    background-color: lightgray;
+}

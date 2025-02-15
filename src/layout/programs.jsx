@@ -8,6 +8,7 @@ import Nav from "../component/nav/nav"
 import NewCardEdit from "../component/newCardEdit/newcardedit"
 import StatsComponent from "../component/StatsComponent/StatsComponent"
 import Text from "../component/Text/text"
+import StatsComponent2 from "../component/StatsComponent2/StatsComponent2"
 
 const Programs = () =>{
     return(
@@ -19,9 +20,8 @@ const Programs = () =>{
               discription="Emphasize the broader community impact, like job creation, improved infrastructure, or restored communal spaces."
         /> */}
         <Causes/>
-        <StatsComponent/>
+        <StatsComponent2/>
         <FAQ/>
-
         <DonationComponent/>
         <Footer/>
         </>
