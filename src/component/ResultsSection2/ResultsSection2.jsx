@@ -1,5 +1,7 @@
 import React from "react";
 import "./ResultsSection2.css";
+import IMG1 from "../../assets/imglogo.jpg"
+
 
 const StatItem = ({ icon, label, value }) => (
   <div className="result2-stat-item">
@@ -15,7 +17,7 @@ const ResultsSection2 = () => {
       <div className="result2-results-content">
         <div className="result2-image-container">
           <img
-            src="https://framerusercontent.com/images/9s5NS6wtc5rkatYS6TGfpFtD0.png?scale-down-to=1024"
+            src={IMG1}
             alt="Group of volunteers working together"
           />
         </div>

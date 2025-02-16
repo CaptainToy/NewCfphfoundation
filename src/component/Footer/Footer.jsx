@@ -1,7 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from React Router
 import "./Footer.css"; // Import the CSS file
 import Logo from "../../assets/logo.png";
-
 
 const Footer = () => {
   return (
@@ -9,13 +9,13 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-left">
           <div className="logo">
-          <img src={Logo} alt="Logo"className="logo-icon" />
+            <img src={Logo} alt="Logo" className="logo-icon" />
           </div>
           <p className="footer-text">
             Together, we can make a real impact in communities around the world.
           </p>
           <div className="subscribe">
-            <i class="bi bi-chat-square-text text-squ"></i>
+            <i className="bi bi-chat-square-text text-squ"></i>
             <input type="email" placeholder="Enter your email address" />
             <button>Subscribe</button>
           </div>
@@ -24,20 +24,20 @@ const Footer = () => {
           <div className="links">
             <div className="column">
               <h4>Quick Links</h4>
-              <a href="#">Donation</a>
-              <a href="#">About us</a>
-              <a href="#">Programs</a>
+              <Link to="/donation">Donation</Link>
+              <Link to="/about">About us</Link>
+              <Link to="/programs">Programs</Link>
             </div>
             <div className="column">
               <h4>More</h4>
-              <a href="#">Blogs</a>
-              <a href="#">Blogs details</a>
-              <a href="#">Testimonials</a>
+              <Link to="/blogs">Blogs</Link>
+              <Link to="/blogs-details">Blog Details</Link>
+              <Link to="/testimonials">Testimonials</Link>
             </div>
             <div className="column">
               <h4>Legal & Policy Links</h4>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Contact Us</a>
+              <Link to="/privacy-policy">Privacy Policy</Link>
+              <Link to="/contact">Contact Us</Link>
             </div>
           </div>
         </div>
@@ -46,9 +46,9 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>Copyright © 2025 Kindora. All Rights Reserved.</p>
         <div className="social-icons">
-            <a href=""><i class="bi bi-instagram instagram"></i></a>
-            <a href=""><i class="bi bi-facebook facebook"></i></a>
-            <a href=""><i class="bi bi-youtube youtube"></i></a>
+          <a href="#"><i className="bi bi-instagram instagram"></i></a>
+          <a href="#"><i className="bi bi-facebook facebook"></i></a>
+          <a href="#"><i className="bi bi-youtube youtube"></i></a>
         </div>
       </div>
     </footer>

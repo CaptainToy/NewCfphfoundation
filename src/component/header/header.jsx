@@ -3,6 +3,10 @@ import { Link } from "react-router-dom"; // Import Link for navigation
 import "./header.css";
 import Logo from "../../assets/logo.png";
 import IMG1 from "../../assets/imglolz.jpg";
+import IMG2 from "../../assets//donnor/IMG-20250215-WA0058.jpg"
+import IMG3 from "../../assets/donnor/IMG-20250215-WA0064.jpg"
+import IMG4 from "../../assets/donnor/IMG-20250215-WA0061.jpg"
+import IMG5 from "../../assets/donnor/IMG-20250215-WA0062.jpg"
 
 const Header = () => {
   const [showAllPages, setShowAllPages] = useState(false);
@@ -68,10 +72,10 @@ const Header = () => {
           <div className="header-info">
           <div className="flex flex-col items-center justify-center">
 	          <div className="flex -space-x-3">
-		          <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src="https://source.unsplash.com/30x30/?portrait?1" />
-		          <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src="https://source.unsplash.com/30x30/?portrait?2" />
-		          <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src="https://source.unsplash.com/30x30/?portrait?3" />
-		          <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src="https://source.unsplash.com/30x30/?portrait?4" />
+		          <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src={IMG2} />
+		          <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src={IMG3} />
+		          <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src={IMG4} />
+		          <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src={IMG5} />
 	        </div>
         </div>
             <span>100+ Donor active members</span>
@@ -89,7 +93,7 @@ const Header = () => {
                 <i className="bi bi-arrow-right-circle"></i>
               </div>
             </Link>
-            <Link to="/learn-more" className="header-learn-btn">Learn More</Link>
+            {/* <Link to="/learn-more" className="header-learn-btn">Learn More</Link> */}
           </div>
           <div className="header-partners">
             <span>Our most loved partners</span>
