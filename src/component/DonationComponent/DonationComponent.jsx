@@ -1,5 +1,15 @@
 import React from "react";
-import "./DonationComponent.css"; // Import the CSS file
+import "./DonationComponent.css"; 
+import IMG2 from "../../assets/donnor/IMG-20250215-WA0058.jpg";
+import IMG3 from "../../assets/donnor/IMG-20250215-WA0064.jpg";
+import IMG4 from "../../assets/donnor/IMG-20250215-WA0061.jpg";
+import IMG5 from "../../assets/donnor/IMG-20250215-WA0062.jpg";
+
+const images = [
+  IMG5,
+  IMG4,
+  IMG3
+];
 
 const DonationComponent = () => {
   return (
@@ -30,18 +40,22 @@ const DonationComponent = () => {
           <div className="people-count">
             <h4>Total people involved</h4>
             <p>Building Brighter Futures Through Learning Opportunities</p>
-           <div className="flex flex-col items-center justify-center">
-	<div className="flex -space-x-1" style={{marginTop: "20px"}}>
-		<img alt="" className="w-10 h-10 border rounded-full dark:bg-gray-500 dark:border-gray-300" src="https://source.unsplash.com/40x40/?portrait?1" />
-		<img alt="" className="w-10 h-10 border rounded-full dark:bg-gray-500 dark:border-gray-300" src="https://source.unsplash.com/40x40/?portrait?2" />
-		<img alt="" className="w-10 h-10 border rounded-full dark:bg-gray-500 dark:border-gray-300" src="https://source.unsplash.com/40x40/?portrait?2" />
-		
-	</div>
-</div>
+            <div className="flex flex-col items-center justify-center">
+              <div className="flex -space-x-1" style={{ marginTop: "20px" }}>
+                {images.map((src, index) => (
+                  <img
+                    key={index}
+                    alt="Person portrait"
+                    className="w-10 h-10 border rounded-full dark:bg-gray-500 dark:border-gray-300"
+                    src={src}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
           <div className="description">
             <p>Total people involved for vulnerable families and individuals</p>
-         </div>
+          </div>
         </div>
       </div>
 

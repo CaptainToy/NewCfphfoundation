@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link for navigation
+import { Link } from "react-router-dom";
 import "./header.css";
 import Logo from "../../assets/logo.png";
 import IMG1 from "../../assets/imglolz.jpg";
-import IMG2 from "../../assets//donnor/IMG-20250215-WA0058.jpg"
-import IMG3 from "../../assets/donnor/IMG-20250215-WA0064.jpg"
-import IMG4 from "../../assets/donnor/IMG-20250215-WA0061.jpg"
-import IMG5 from "../../assets/donnor/IMG-20250215-WA0062.jpg"
+import IMG2 from "../../assets//donnor/IMG-20250215-WA0058.jpg";
+import IMG3 from "../../assets/donnor/IMG-20250215-WA0064.jpg";
+import IMG4 from "../../assets/donnor/IMG-20250215-WA0061.jpg";
+import IMG5 from "../../assets/donnor/IMG-20250215-WA0062.jpg";
 
 const Header = () => {
   const [showAllPages, setShowAllPages] = useState(false);
@@ -33,14 +33,27 @@ const Header = () => {
         {/* Navigation Links */}
         <div className={`header-nav-links ${showMobileMenu ? "mobile-menu-open" : ""}`}>
           <div className="mobile-menu-close" onClick={handleMobileMenuClick}>
-            <i className="bi bi-x-lg"></i> {/* Close Icon */}
+            <i className="bi bi-x-lg"></i> 
           </div>
           <button className="header-dropdown" onClick={handleDropdownClick}>
             All Pages <i className="bi bi-arrow-down-short"></i>
           </button>
-          <Link to="/programs" className="list">Programs</Link>
-          <Link to="/blogs" className="list blog">Blog</Link>
-          <Link to="/donation" className="header-donate-btn">Donate Now</Link>
+          {showAllPages && (
+            <div className="all-pages-container">
+              <div className="all-pages-grid">
+                <Link to="/" className="textrun" onClick={handleDropdownClick}>Home</Link>
+                <Link to="/donation" className="textrun" onClick={handleDropdownClick}>Donation</Link>
+                <Link to="/about" className="textrun" onClick={handleDropdownClick}>About Us</Link>
+                <Link to="/blogs" className="textrun" onClick={handleDropdownClick}>Blogs</Link>
+                <Link to="/contact" className="textrun" onClick={handleDropdownClick}>Contact Us</Link>
+                <Link to="/programs" className="textrun" onClick={handleDropdownClick}>Programs</Link>
+                <Link to="/review" className="textrun" onClick={handleDropdownClick}>Review</Link>
+              </div>
+            </div>
+          )}
+          <Link to="/programs" className="list" onClick={handleMobileMenuClick}>Programs</Link>
+          <Link to="/blogs" className="list blog" onClick={handleMobileMenuClick}>Blog</Link>
+          <Link to="/donation" className="header-donate-btn" onClick={handleMobileMenuClick}>Donate Now</Link>
         </div>
 
         {/* Hamburger Menu on the right */}
@@ -51,33 +64,18 @@ const Header = () => {
         </div>
       </nav>
 
-      {/* Display All Pages Grid inside Navbar */}
-      {showAllPages && (
-        <div className="all-pages-container">
-          <div className="all-pages-grid">
-            <Link to="/" className="textrun">Home</Link>
-            <Link to="/donation"className="textrun">Donation</Link>
-            <Link to="/about" className="textrun">About Us</Link>
-            <Link to="/blogs" className="textrun">Blogs</Link>
-            <Link to="/contact" className="textrun">Contact Us</Link>
-            <Link to="/programs" className="textrun">Programs</Link>
-            <Link to="/review" className="textrun">Review</Link>
-          </div>
-        </div>
-      )}
-
       {/* Hero Section */}
       <div className="header-content">
         <div className="header-left-section">
           <div className="header-info">
-          <div className="flex flex-col items-center justify-center">
-	          <div className="flex -space-x-3">
-		          <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src={IMG2} />
-		          <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src={IMG3} />
-		          <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src={IMG4} />
-		          <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src={IMG5} />
-	        </div>
-        </div>
+            <div className="flex flex-col items-center justify-center">
+              <div className="flex -space-x-3">
+                <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src={IMG2} />
+                <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src={IMG3} />
+                <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src={IMG4} />
+                <img alt="" className="w-8 h-8 border rounded-full dark:bg-gray-500 dark:border-gray-300" src={IMG5} />
+              </div>
+            </div>
             <span>100+ Donor active members</span>
           </div>
           <div className="header-text">

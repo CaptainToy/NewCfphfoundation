@@ -18,26 +18,26 @@ const Home = () => {
     return (
         <>
             <Header />
-           <div className="text-con">
+           {/* <div className="text-con">
                 <Textcon
                     icon="crown"
                     badgeText="Impactful metrics"
                     title="Programs that change lives"
                     subtitle="Together, we can make a real impact in communities around the world. Help us bring hope and support."
                 />
-           </div>
-            <ImpactCards />
-            <div className="text-con">
+           </div> */}
+            {/* <ImpactCards /> */}
+            {/* <div className="text-con">
                 <Textcon
                     icon="crown"
                     badgeText="Impactful metrics"
                     title="Ways you can make a difference"
                     subtitle="Together, we can make a real impact in communities around the world. Help us bring hope and support."
                 />
-           </div>
-            <ResultsSection />
-            <ResultsSection2 />
-            <div className="">
+           </div> */}
+            {/* <ResultsSection /> */}
+            {/* <ResultsSection2 /> */}
+            {/* <div className="">
                 <Textcon
                     icon="bi bi-bookmark-tree" // Example icon
                     badgeText="Funding Initiatives"
@@ -45,8 +45,8 @@ const Home = () => {
                     subtitle="Your contributions make a significant difference in the lives of those we serve."
                 />
                 <Success />
-            </div>
-            <div className="">
+            </div> */}
+            {/* <div className="">
                 <Textcon
                     icon="business"
                     badgeText="Strategic Partnerships"
@@ -54,24 +54,24 @@ const Home = () => {
                     subtitle="We partner with corporations to amplify our impact and reach more communities."
                 />
                 <CorporatePartnerships />
-            </div>
-            <EducationPromo />
+            </div> */}
+            {/* <EducationPromo /> */}
 
-            <div className="text-content-con">
+            {/* <div className="text-content-con">
                 <Textcon
                     icon="school"
                     badgeText="Voices of Support"
                     title="Hear from those who believe in our mission"
                     subtitle="Together, we can make a real impact in communities around the world. Help us bring hope and support."
                 />
-            </div>
-                <TestimonialGrid />
+            </div> */}
+                {/* <TestimonialGrid /> */}
 
 
-            <div style={{marginTop:"100px"}}></div>
-            <DonationComponent />
-            <FAQ />
-            <Footer />
+            {/* <div style={{marginTop:"100px"}}></div> */}
+            {/* <DonationComponent /> */}
+            {/* <FAQ /> */}
+            {/* <Footer /> */}
         </>
     )
 }

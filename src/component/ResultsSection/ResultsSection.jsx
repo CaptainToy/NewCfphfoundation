@@ -1,10 +1,10 @@
 import React from "react";
 import "./ResultsSection.css";
-import IMG1 from "../../assets/new/IMG-20250207-WA0143.jpg"
-
-const StatItem = ({ icon, label, value }) => (
+import IMG1 from "../../assets/new/IMG-20250207-WA0143.jpg";
+ 
+const StatItem = ({ imgSrc, label, value }) => (
   <div className="statItem">
-    <i className={`bi ${icon} statIcon`}></i>
+    <img src={imgSrc} alt={label} className="statIcon" />
     <p className="statLabel">{label}</p>
     <h4 className="statValue">{value}</h4>
   </div>
@@ -13,7 +13,6 @@ const StatItem = ({ icon, label, value }) => (
 const ResultsSection = () => {
   return (
     <section className="resultsSection" aria-label="Impactful Programs Results">
-
       <div className="resultsContent">
         <div className="imageContainer">
           <img 
@@ -30,8 +29,8 @@ const ResultsSection = () => {
           </p>
 
           <div className="statsContainer">
-            <StatItem icon="bi-building" label="Schools Partnered" value="100+" />
-            <StatItem icon="bi-mortarboard" label="Scholarships Awarded" value="800+" />
+            <StatItem imgSrc="/support.png" label="Schools Partnered" value="100+" />
+            <StatItem imgSrc="/social-security.png" label="Scholarships Awarded" value="800+" />
           </div>
         </div>
       </div>
