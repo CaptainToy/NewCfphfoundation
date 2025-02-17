@@ -8,6 +8,7 @@ import Blog from "./layout/Blog";
 import Reviews from "./layout/Reviews";
 import Contact from './layout/Contact';
 import Error from './component/404error/error';
+import ModelCard from './component/ModelCard/model';
 
 function App() {
   return (

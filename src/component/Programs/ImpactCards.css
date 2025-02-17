@@ -151,3 +151,142 @@
 }
 
 
+/* Default styling for larger screens remains unchanged */
+
+/* Responsive Design for All Devices */
+
+/* For tablets and smaller screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .impact-container {
+    padding: 10% 5%;
+  }
+
+  .impact-subtitle {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .impact-card {
+    width: 80%;
+    min-height: 350px;
+    padding: 5%;
+  }
+
+  .impact-number {
+    font-size: 40px;
+  }
+
+  .impact-text {
+    font-size: 18px;
+  }
+
+  .impact-description {
+    bottom: 100px;
+    width: 60%;
+    font-size: 12px;
+  }
+
+  .impact-image {
+    width: 60%;
+    height: auto;
+  }
+}
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .impact-container {
+    padding: 8% 5%;
+  }
+
+  .impact-title {
+    font-size: 32px;
+  }
+
+  .impact-subtitle {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .impact-grid {
+    flex-direction: column;
+  }
+
+  .impact-card {
+    width: 90%;
+    padding: 6%;
+  }
+
+  .impact-number {
+    font-size: 36px;
+  }
+
+  .impact-text {
+    font-size: 16px;
+  }
+
+  .impact-description {
+    bottom: 80px;
+    width: 80%;
+    font-size: 11px;
+  }
+}
+
+/* For smaller mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .impact-container {
+    padding: 8% 3%;
+  }
+
+  .impact-title {
+    font-size: 28px;
+  }
+
+  .impact-subtitle {
+    width: 95%;
+    font-size: 12px;
+  }
+
+  .impact-card {
+    width: 100%;
+    padding: 8%;
+  }
+
+  .impact-number {
+    font-size: 50px;
+  }
+
+  .impact-text {
+    margin-top: -10px;
+    font-size: 18px;
+  }
+
+  .impact-description {
+    bottom: 40%;
+    width: 60%;
+    font-size: 13px;
+  }
+  .impact-image-con {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .impact-image {
+    width: 50%;
+  }
+  .impact-icon {
+    margin-top: 20px;
+  }
+  .impact-image-yellow-bg {
+     position: absolute;
+     width: 100%;
+      bottom: -160px;
+  }
+  .impact-image-black-bg{
+    bottom: -100px;
+    width: 100%;
+  }
+
+
+}

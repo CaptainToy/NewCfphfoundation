@@ -1,0 +1,61 @@
+/* Card.css */
+.model-card-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    width: fit-content;
+    margin: 20px auto;
+  }
+  
+  .model-card-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .model-card-mic-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .model-card-text-container {
+    flex: 1;
+  }
+  
+  .model-card-date-time {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .model-card-date-icon,
+  .model-card-time-icon,
+  .model-card-location-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .model-card-organizer,
+  .model-card-venue {
+    margin-bottom: 5px;
+  }
+  
+  .model-card-reminder-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .model-card-reminder-button:hover {
+    background-color: #0056b3;
+  }

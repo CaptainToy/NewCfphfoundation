@@ -91,7 +91,7 @@ const Header = () => {
                 <i className="bi bi-arrow-right-circle"></i>
               </div>
             </Link>
-            {/* <Link to="/learn-more" className="header-learn-btn">Learn More</Link> */}
+            <Link to="/learn-more" className="header-learn-btn">Learn More</Link>
           </div>
           <div className="header-partners">
             <span>Our most loved partners</span>

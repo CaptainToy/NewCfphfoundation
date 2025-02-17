@@ -348,13 +348,20 @@
         text-align: center;
         order: 3;
         margin-top: 20px;
+        display: flex;
     }
 
-    .header-left-section, 
+    .header-left-section{
+        width: 100%;
+        text-align: left;
+    } 
     .header-right-section {
         justify-content: center;
         width: 100%;
         margin-bottom: 20px;
+        text-align: center;
+        order: 3; 
+        margin-top: 20px;
     }
     .header-text{
         display: flex;
@@ -381,8 +388,8 @@
     }
 
     .header-right-img {
-        width: 100%;
-        max-width: 90%;
+        width: 90%;
+        max-width: 600px;
     }
     .header-logo {
         padding: 0;
@@ -414,20 +421,23 @@
         border-radius: 50%;
     }
     .header-buttons {
-        display: none;
         display: flex;
-        position: absolute;
-        gap: 30px;
-        border: 1px solid black;
+        position: relative;
+        gap: 3px;
+        /* margin-top: 10px; */
+        margin-left: -45px;
     }
     .header-learn-btn {
-        background-color: black;
+        position: absolute;
+        right: 120px;
         border: 1px solid black;
+        border-radius: 30px;
+        margin-top: 5px;
+        color: black;
     }
     .header-donate-btn {
-        /* position: absolute; */
-        color: black;
-        background-color: black;
+        position: absolute;
+        padding: 10px 20px;
     }
     .icon-container {
         background-color: black;
@@ -441,7 +451,14 @@
         font-size: 30px;
         background: transparent;
         color: white;
-        padding: 20px;
+        padding: 50px;
+    }
+    .header-partners {
+        margin-left: -20px;
+    }
+    .header-partners span{
+        font-size: 25px;
+        color: #6b6363;
     }
   }
 @media (max-width: 600px) {
@@ -472,9 +489,10 @@
         margin-top: 20px;
     }
 
-    .header-left-section, 
+     
     .header-right-section {
         width: 100%;
+        margin-left: -150px;
         margin-bottom: 20px;
     }
 
@@ -536,12 +554,10 @@
     .list,
     .header-donate-btn {
         color: white;
-        background: transparent;
         border: none;
         font-size: 20px;
-        padding: 10px;
-        border-bottom: 1px solid white;
-        width: 100%;
+        padding: 10px 10px;
+        width: 40%;
         text-align: center;
     }
 
@@ -567,6 +583,11 @@
 
     .all-pages-grid .textrun {
         color: white;
+    }
+    
+    .header-right-img {
+        width: 100%;
+        max-width: 600px;
     }
 }
 @media (max-width: 1024px) {

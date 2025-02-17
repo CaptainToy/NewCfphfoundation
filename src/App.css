@@ -4,12 +4,12 @@ body, input, textarea, select, button {
     font-size: 12px;
     font-family: sans-serif;
 }
-/* .text-con{
+.text-con{
     margin-bottom: -90px;
 }
 .text-content-con{
     margin-bottom: -50px;
-} */
+}
  link{
     text-decoration: none;
     color: black;

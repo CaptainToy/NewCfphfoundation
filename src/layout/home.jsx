@@ -18,24 +18,26 @@ const Home = () => {
     return (
         <>
             <Header />
-           {/* <div className="text-con">
+           <div style={{marginTop: "100px"}}>
                 <Textcon
                     icon="crown"
                     badgeText="Impactful metrics"
                     title="Programs that change lives"
                     subtitle="Together, we can make a real impact in communities around the world. Help us bring hope and support."
+                    background="rgb(255, 142, 108)" 
                 />
-           </div> */}
-            {/* <ImpactCards /> */}
-            {/* <div className="text-con">
-                <Textcon
-                    icon="crown"
-                    badgeText="Impactful metrics"
-                    title="Ways you can make a difference"
-                    subtitle="Together, we can make a real impact in communities around the world. Help us bring hope and support."
-                />
-           </div> */}
-            {/* <ResultsSection /> */}
+           </div>
+            <ImpactCards />
+            <div style={{marginTop: "100px"}}>
+            <Textcon
+                 imgSrc="/performance-management.png"
+                 badgeText="Our results"
+                 title="Results that inspire change"
+                subtitle="Together, we can make a real impact in communities around the world. Help us bring hope and support."
+                background="rgb(255, 142, 108)" 
+            />
+           </div>
+            <ResultsSection />
             {/* <ResultsSection2 /> */}
             {/* <div className="">
                 <Textcon

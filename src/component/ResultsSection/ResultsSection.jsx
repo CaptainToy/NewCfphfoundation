@@ -10,7 +10,7 @@ const StatItem = ({ imgSrc, label, value }) => (
   </div>
 );
 
-const ResultsSection = () => {
+const ResultsSection = () => { 
   return (
     <section className="resultsSection" aria-label="Impactful Programs Results">
       <div className="resultsContent">
