@@ -1,6 +1,6 @@
 import React from "react"
 import "../App.css"
-// import Header from "../component/header/header"
+import Header from "../component/header/header"
 import ImpactCards from "../component/Programs/ImpactCards"
 import ResultsSection from "../component/ResultsSection/ResultsSection"
 import ResultsSection2 from "../component/ResultsSection2/ResultsSection2"
@@ -19,7 +19,7 @@ const Home = () => {
     return (
         <>
             <Nav/>
-            {/* <Header /> */}
+            <Header />
 
            <div style={{marginTop: "100px"}}>
                 <Textcon

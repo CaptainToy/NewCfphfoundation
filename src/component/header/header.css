@@ -1,0 +1,619 @@
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Urbanist", sans-serif;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+}
+
+.nav-link {
+    text-decoration: none;
+    text-transform: none;
+    color: inherit;
+  }
+  a {
+    text-decoration: none !important;
+    color: black;
+  }
+    
+/* Navbar Styles */
+.header-navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    padding: 15px 40px;
+    position: relative;
+}
+.header-logo {
+   padding: 15px 10px 0 110px;
+   margin-bottom: -40px;
+}
+.header-logo img{
+    width: 100px;
+    height: auto;
+}
+  
+.header-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 30px; 
+    right: 110px;
+    z-index: 10; 
+    padding: 10px;
+    border-radius: 30px;
+
+    
+   
+    /* transform: translate(-50%, -50%); */
+}
+  
+.header-dropdown {
+    padding: 10px 14px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    font-size:  bold;
+    font-size: 17px;
+}
+.header-dropdown i{
+    font-size: 20px;
+}
+  /* All Pages Grid */
+.all-pages-container {
+    position: absolute;
+    top: 120px;
+    right: 180px;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+.all-pages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    text-align: left;
+}
+
+.all-pages-grid .textrun {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.all-pages-grid .textrun:hover {
+    color: red;
+}
+/*  */
+.header-donate-btn {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 17px;
+    position: relative;
+    overflow: hidden;
+    gap: 10px;
+}
+/* Learn More Button */
+.header-learn-btn {
+    background-color: transparent;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.icon-container {
+    background-color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container i {
+    z-index: 1;
+    padding: 10px;
+    font-size: 30px;
+    background: transparent;
+    color: white;
+    padding: 20px;
+}
+
+.list{
+    background-color: white;
+    color: black;
+    padding: 15px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 17px;
+    font-family: popins;
+    font-size:  bold;
+
+}
+.list:hover{
+    color: red;
+}
+/* Content Layout */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 40px;
+    margin-right: -150px;
+}
+  
+/* Left Section */
+.header-left-section {
+    width: 40%;
+    text-align: left;
+}
+.header-text h2{
+    margin-top: 20px;
+    font-size: 90px;
+    font-weight: 540;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    line-height: 110px;
+
+}
+.header-text p{
+    width: 90%;
+    font-size: 25px;
+    line-height: 30px;
+    color: #6b6363;
+    margin-bottom: 30px;
+}
+
+/* Donor Info */
+.header-info {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.header-info span{
+    color: rgb(177, 174, 174);
+    font-size: 20px;
+}
+.header-donor-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Buttons */
+.header-buttons {
+    display: flex;
+    gap: 30px;
+}
+  
+.header-learn-btn {
+    /* background-color: transparent; */
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    /* color: black; */
+}
+
+/* Partners Section */
+.header-partners {
+    margin-top: 80px;
+}
+.header-partners span{
+    font-size: 25px;
+    color: #6b6363;
+}
+.header-partner-logos {
+    display: flex;
+    gap: 1px;
+    font-weight: bold;
+}
+
+/* Right Section */
+.header-right-section {
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    padding: 20px 40px;
+    z-index: 1; 
+}
+
+.header-right-img {
+    width: 90%;
+    height: auto;
+    border-radius: 40px;
+}
+
+/* Volunteers */
+.header-volunteers {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.header-volunteer-card {
+    background-color: #ececec;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Team Info */
+.header-team-info {
+    margin-top: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.header-team-count {
+    font-size: 24px;
+    font-weight: bold;
+}
+/* header.css */
+
+  
+  .header-navbar {
+    display: flex;
+    justify-content: space-between; /* Space logo and nav */
+    align-items: center; /* Vertically align items */
+    padding: 1rem; /* Add some padding */
+  }
+  
+  .header-hamburger {
+    display: none; /* Hide hamburger on larger screens */
+    cursor: pointer;
+    padding: 10px; /* Add some padding */
+  }
+  
+  .hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: #333; /* Or your preferred color */
+    margin: 5px 0;
+  }
+  
+  .header-nav-links {
+    display: flex;
+    gap: 1rem; /* Space between links */
+  }
+  
+  
+  .mobile-menu-close {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+
+  /* Large Screens (Default) */
+  @media (max-width: 768px) {
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-navbar {
+        flex-direction: row; /* Ensures logo and hamburger align in a row */
+        justify-content: space-between; /* Pushes logo to the left and hamburger to the right */
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+
+    .header-right-section {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        order: 2; /* Moves the section below the navbar */
+        margin-top: 20px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        order: 3;
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .header-left-section{
+        width: 100%;
+        text-align: left;
+    } 
+    .header-right-section {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+        order: 3; 
+        margin-top: 20px;
+    }
+    .header-text{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        justify-content: left;
+        margin-right: 50px;
+        margin-left: -50px;
+        margin-top: -10px
+        
+    }
+    .header-text h2 {
+        width: 350px;
+        text-align: left;
+        font-size: 10px;
+        line-height: 3rem;
+    }
+
+    .header-text p {
+        margin-left: 0;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        margin-top: 20px;
+    }
+
+    .header-right-img {
+        width: 90%;
+        max-width: 600px;
+    }
+    .header-logo {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: left;
+    }
+    .header-logo img {
+        width: 80px; 
+        height: auto;
+    }
+
+    .header-hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .header-info {
+        margin-left: -50px;
+        display: flex;
+        align-items: center;
+    }
+    .header-info span{
+        color: rgb(177, 174, 174);
+        font-size: 17px;
+    }
+    .header-donor-img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    .header-buttons {
+        display: flex;
+        position: relative;
+        gap: 3px;
+        /* margin-top: 10px; */
+        margin-left: -45px;
+    }
+    .header-learn-btn {
+        position: absolute;
+        right: 120px;
+        border: 1px solid black;
+        border-radius: 30px;
+        margin-top: 5px;
+        color: black;
+    }
+    .header-donate-btn {
+        position: absolute;
+        padding: 10px 20px;
+    }
+    .icon-container {
+        background-color: black;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    .icon-container i {
+        z-index: 1;
+        padding: 10px;
+        font-size: 30px;
+        background: transparent;
+        color: white;
+        padding: 50px;
+    }
+    .header-partners {
+        margin-left: -20px;
+    }
+    .header-partners span{
+        font-size: 25px;
+        color: #6b6363;
+    }
+  }
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-right-section {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        order: 2; /* Moves the section below the navbar */
+        margin-top: 20px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        order: 3; /* Moves content below the right section */
+        margin-top: 20px;
+    }
+
+     
+    .header-right-section {
+        width: 100%;
+        margin-left: -150px;
+        margin-bottom: 20px;
+    }
+
+    .header-text h2 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .header-text p {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    .header-logo img {
+        width: 80px;
+    }
+
+    .header-hamburger {
+        display: block;
+        z-index: 102;
+    }
+
+    .header-nav-links {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        max-width: 50%;
+        max-height: 50%;
+        width: 600px;
+        height: 600px;
+        justify-content: center;
+        align-items: center;
+        z-index: 101;
+        gap: 20px;
+        color: black;
+    }
+
+    .header-nav-links.mobile-menu-open {
+        display: flex;
+    }
+
+    .mobile-menu-close {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .header-dropdown i {
+        color: white;
+    }
+
+    .header-dropdown,
+    .list,
+    .header-donate-btn {
+        color: white;
+        border: none;
+        font-size: 20px;
+        padding: 10px 10px;
+        width: 40%;
+        text-align: center;
+    }
+
+    .all-pages-container {
+        position: relative;
+        top: 0;
+        right: 0;
+        background: transparent;
+        padding: 0;
+        box-shadow: none;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .all-pages-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .all-pages-grid .textrun {
+        color: white;
+    }
+    
+    .header-right-img {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+@media (max-width: 1024px) {
+    .header-navbar {
+        display: flex;
+        flex-direction: row; /* Ensures horizontal alignment */
+        justify-content: space-between; /* Pushes logo to the left and hamburger to the right */
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .header-logo {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-logo img {
+        width: 80px; /* Adjust logo size for smaller screens */
+        height: auto;
+    }
+
+    .header-hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
