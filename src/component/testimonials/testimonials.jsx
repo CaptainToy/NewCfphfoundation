@@ -24,6 +24,13 @@ const testimonials = [
     quote: 'The CFPH Foundation has been a tremendous support for me and my family.',
     star: 4,
   },
+  {
+    name: 'Riley Bennett',
+    company: 'Beneficiary ',
+    image: 'https://framerusercontent.com/images/ErbmgkTkdj4QiwxhvrYrPXGIZM.svg',
+    quote: 'The CFPH Foundation has been a tremendous support for me and my family.',
+    star: 4,
+  },
 ];
 
 const TestimonialGrid = () => {
@@ -45,7 +52,7 @@ const TestimonialGrid = () => {
               <h3 className="name">{testimonial.company}</h3>
               {/* <p className="company">{testimonial.company}</p> */}
             </div>
-          </div>
+          </div> 
         </div>
       ))}
     </div>

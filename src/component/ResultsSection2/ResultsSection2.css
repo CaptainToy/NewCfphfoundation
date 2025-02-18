@@ -122,3 +122,77 @@
     color: #333;
     font-weight: 600;
 }
+
+@media (max-width: 768px) {
+    .result2-results-section {
+        max-width: 100%;
+        padding: 20px;
+        margin-top: -50px;
+    }
+
+    .result2-results-header {
+        margin-bottom: 20px;
+    }
+
+    .result2-section-title {
+        font-size: 24px;
+    }
+
+    .result2-section-subtitle {
+        font-size: 16px;
+    }
+
+    .result2-results-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .result2-image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .result2-text-content {
+        margin-top: 40px;
+    }
+
+    .result2-section-tag {
+        margin-left: 20px;
+    }
+
+    .result2-content-title {
+        width: 100%;
+        font-size: 28px;
+        margin-left: 20px;
+        line-height: 40px;
+    }
+
+    .result2-content-description {
+        width: 100%;
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .result2-stats-container {
+        width: 100%;
+        padding: 20px;
+        margin: 40px 0;
+    }
+
+    .result2-stat-item {
+        padding: 0 10px;
+    }
+
+    .result2-stat-icon {
+        font-size: 24px;
+    }
+
+    .result2-stat-label {
+        font-size: 12px;
+    }
+
+    .result2-stat-value {
+        font-size: 18px;
+    }
+}

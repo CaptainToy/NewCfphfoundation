@@ -37,17 +37,19 @@ export default function FAQ() {
       <div className="faq-header">
         <div className="faq-header-left">
 
-        <div className="faq-impact-badge">
-        <div className="faq-impact-badge-content">
-          <img src="/icon.svg" alt="Icon" className="faq-impact-badge-icon" />
-          <p className="faq-impact-badge-text">Questions Answered</p>
+       <div>
+          <div className="faq-impact-badge">
+          <div className="faq-impact-badge-content">
+            <img src="/crown.png" alt="Icon" className="faq-impact-badge-icon" />
+            <p className="faq-impact-badge-text">Questions Answered</p>
+          </div>
         </div>
-      </div>
-      <div className="faq-title-container">
-        <h2 className="faq-title">Frequently asked questions</h2>
-      </div>
+        <div className="faq-title-container">
+          <h2 className="faq-title">Frequently asked questions</h2>
+        </div>
+       </div>
           
-       
+        
         </div>
 
         <div className="faq-header-right">

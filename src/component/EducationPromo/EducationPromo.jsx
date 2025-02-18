@@ -15,7 +15,7 @@ const EducationPromo = () => {
       <div className="promo-image">
         <img src="https://framerusercontent.com/images/oEdp0eCeNQ9LkvOgjP6ONKKjLs0.png?scale-down-to=1024" alt="Children raising hands" />
       </div>
-    </div>
+    </div> 
   );
 };
 

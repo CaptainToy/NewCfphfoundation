@@ -93,3 +93,68 @@
   color: #333;
   line-height: 1.7;
 }
+@media (max-width: 1200px) {
+  .card {
+    width: 500px; /* Slightly reduced card width */
+    height: 300px; /* Maintain aspect ratio or adjust as needed */
+  }
+  .card-title {
+    font-size: 55px; /* Slightly smaller title */
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: 400px; 
+    height: 260px;
+  }
+  .card-title {
+    font-size: 45px;
+  }
+  .card-badge {
+    font-size: 20px;
+  }
+  .card-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center the cards */
+  }
+
+  .card {
+    width: 90%; /* Make cards take full width */
+    height: auto; /* Allow height to adjust */
+  }
+  .card-title {
+    font-size: 35px;
+  }
+  .card-badge {
+    font-size: 18px;
+  }
+  .card-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cards-container{
+    margin-top: -10%;
+  }
+  .card {
+    width: 95%;
+    height: auto;
+  }
+  .card-title {
+    font-size: 28px;
+  }
+  .card-badge {
+    font-size: 16px;
+  }
+  .card-text {
+    font-size: 12px;
+  }
+}

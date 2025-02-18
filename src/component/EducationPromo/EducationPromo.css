@@ -81,3 +81,48 @@
       border-radius: 10px;
   }
 }
+/* Media query for smaller screens (e.g., tablets and phones) */
+@media (max-width: 768px) {
+  .education-promo {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px;
+  }
+
+  .promo-content {
+    position: relative; /* Remove absolute positioning */
+    left: 0; /* Reset left positioning */
+    text-align: center; /* Center text within the content */
+    max-width: 90%; /* Adjust width for smaller screens */
+    padding: 20px;
+  }
+
+  .promo-content h1 {
+    width: auto; /* Make heading responsive */
+    font-size: 24px; /* Slightly smaller heading */
+  }
+
+  .promo-content p {
+    width: auto; /* Make paragraph responsive */
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
+
+  .promo-image img {
+    width: 100%; /* Make image take full width */
+    border-radius: 10px;
+  }
+}
+
+/* Media query for even smaller screens (e.g., phones) - Optional */
+@media (max-width: 480px) {
+  .promo-content {
+    padding: 15px; /* Reduce padding on very small screens */
+  }
+
+  .promo-content h1 {
+    font-size: 20px; /* Even smaller heading on phones */
+  }
+
+  .promo-content p {
+    font-size: 0.85rem; /* Slightly smaller paragraph size */
+  }
+}

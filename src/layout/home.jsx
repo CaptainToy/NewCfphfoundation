@@ -1,6 +1,6 @@
 import React from "react"
 import "../App.css"
-import Header from "../component/header/header"
+// import Header from "../component/header/header"
 import ImpactCards from "../component/Programs/ImpactCards"
 import ResultsSection from "../component/ResultsSection/ResultsSection"
 import ResultsSection2 from "../component/ResultsSection2/ResultsSection2"
@@ -12,12 +12,15 @@ import TestimonialGrid from "../component/testimonials/testimonials"
 import FAQ from "../component/FAQ/FAQ"
 import Footer from "../component/Footer/Footer"
 import DonationComponent from "../component/DonationComponent/DonationComponent"
+import Nav from "../component/nav/nav"
 
 
 const Home = () => {
     return (
         <>
-            <Header />
+            <Nav/>
+            {/* <Header /> */}
+
            <div style={{marginTop: "100px"}}>
                 <Textcon
                     icon="crown"
@@ -28,7 +31,7 @@ const Home = () => {
                 />
            </div>
             <ImpactCards />
-            <div style={{marginTop: "100px"}}>
+            <div style={{marginTop: "80px"}}>
             <Textcon
                  imgSrc="/performance-management.png"
                  badgeText="Our results"
@@ -38,42 +41,48 @@ const Home = () => {
             />
            </div>
             <ResultsSection />
-            {/* <ResultsSection2 /> */}
-            {/* <div className="">
-                <Textcon
-                    icon="bi bi-bookmark-tree" // Example icon
+            <ResultsSection2 />
+        <div style={{marginTop: "80px"}}>
+            <Textcon
+                    imgSrc="/christmas-tree.png" 
                     badgeText="Funding Initiatives"
                     title="Supporting Our Mission"
                     subtitle="Your contributions make a significant difference in the lives of those we serve."
+                    background="rgb(82, 219, 130)" 
                 />
                 <Success />
-            </div> */}
-            {/* <div className="">
-                <Textcon
-                    icon="business"
+            </div>
+         <div style={{marginTop: "80px"}}>
+            <Textcon
+                    imgSrc="/christmas-tree.png" 
                     badgeText="Strategic Partnerships"
                     title="Ways you can make a difference"
                     subtitle="We partner with corporations to amplify our impact and reach more communities."
-                />
+                    background="rgb(255, 142, 108)" 
+                    />
                 <CorporatePartnerships />
-            </div> */}
-            {/* <EducationPromo /> */}
+            </div>
+            <EducationPromo />
 
-            {/* <div className="text-content-con">
-                <Textcon
-                    icon="school"
+        <div style={{marginTop: "80px"}}>
+            <Textcon
+                    imgSrc="/christmas-tree.png" 
                     badgeText="Voices of Support"
                     title="Hear from those who believe in our mission"
                     subtitle="Together, we can make a real impact in communities around the world. Help us bring hope and support."
+                    background="rgb(255, 142, 108)" 
+
                 />
-            </div> */}
-                {/* <TestimonialGrid /> */}
+            </div>
+                <TestimonialGrid />
 
 
-            {/* <div style={{marginTop:"100px"}}></div> */}
-            {/* <DonationComponent /> */}
-            {/* <FAQ /> */}
-            {/* <Footer /> */}
+            <div style={{marginTop:"50px"}}></div>
+            <DonationComponent />
+            <div style={{marginTop:"100px"}}></div>
+
+            <FAQ />
+            <Footer />
         </>
     )
 }

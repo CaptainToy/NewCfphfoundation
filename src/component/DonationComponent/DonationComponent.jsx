@@ -40,6 +40,7 @@ const DonationComponent = () => {
           <div className="people-count">
             <h4>Total people involved</h4>
             <p>Building Brighter Futures Through Learning Opportunities</p>
+
             <div className="flex flex-col items-center justify-center">
               <div className="flex -space-x-1" style={{ marginTop: "20px" }}>
                 {images.map((src, index) => (
@@ -52,6 +53,7 @@ const DonationComponent = () => {
                 ))}
               </div>
             </div>
+            
           </div>
           <div className="description">
             <p>Total people involved for vulnerable families and individuals</p>
@@ -69,6 +71,6 @@ const DonationComponent = () => {
       </div>
     </div>
   );
-};
+}; 
 
 export default DonationComponent;

@@ -94,4 +94,53 @@ body {
     color: white;
     background: #52db82;
   }
-  
+  @media (max-width: 1200px) { /* Example breakpoint - adjust as needed */
+    .CorporatePartnerships-container {
+        padding: 10px 100px; /* Reduced padding on larger tablets/smaller desktops */
+    }
+}
+
+@media (max-width: 992px) { /* Example breakpoint */
+    .CorporatePartnerships-container {
+        padding: 10px 50px; /* Further reduced padding */
+    }
+    .CorporatePartnerships-card {
+        height: auto; /* Allow card height to adjust */
+    }
+}
+
+
+@media (max-width: 768px) { /* Example breakpoint - typical tablet size */
+    .CorporatePartnerships-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust minmax for smaller screens */
+        padding: 10px 20px; /* Significantly reduced padding */
+    }
+    .CorporatePartnerships-card {
+        padding: 20px; /* Reduce card padding */
+    }
+    .CorporatePartnerships-title {
+        font-size: 22px; /* Smaller title */
+    }
+    .CorporatePartnerships-description {
+        font-size: 13px; /* Smaller description */
+    }
+}
+
+@media (max-width: 576px) { /* Example breakpoint - typical mobile size */
+    .CorporatePartnerships-container {
+        grid-template-columns: 1fr; /* Single column layout on mobile */
+        padding: 10px; /* Minimal padding */
+    }
+    .CorporatePartnerships-card {
+        padding: 20px;
+    }
+
+    .CorporatePartnerships-title {
+        font-size: 20px;
+    }
+
+    .CorporatePartnerships-description {
+        font-size: 12px;
+    }
+
+}

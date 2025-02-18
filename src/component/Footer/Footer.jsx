@@ -31,7 +31,7 @@ const Footer = () => {
             <div className="column">
               <h4>More</h4>
               <Link to="/blogs">Blogs</Link>
-              <Link to="/blogs-details">Blog Details</Link>
+              <Link to="/blogs-details">Team</Link>
               <Link to="/testimonials">Testimonials</Link>
             </div>
             <div className="column">
@@ -44,7 +44,7 @@ const Footer = () => {
       </div>
       <hr />
       <div className="footer-bottom">
-        <p>Copyright © 2025 Kindora. All Rights Reserved.</p>
+        <p>Copyright © 2025 CFPHFoundation. All Rights Reserved.</p>
         <div className="social-icons">
           <a href="#"><i className="bi bi-instagram instagram"></i></a>
           <a href="#"><i className="bi bi-facebook facebook"></i></a>
