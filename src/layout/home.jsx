@@ -19,6 +19,7 @@ const Home = () => {
     return (
         <>
             <Nav/>
+            <div style={{marginTop:"-30px"}}></div>
             <Header />
 
            <div style={{marginTop: "100px"}}>
@@ -29,8 +30,8 @@ const Home = () => {
                     subtitle="Together, we can make a real impact in communities around the world. Help us bring hope and support."
                     background="rgb(255, 142, 108)" 
                 />
+             <ImpactCards />
            </div>
-            <ImpactCards />
             <div style={{marginTop: "80px"}}>
             <Textcon
                  imgSrc="/performance-management.png"
@@ -39,10 +40,11 @@ const Home = () => {
                 subtitle="Together, we can make a real impact in communities around the world. Help us bring hope and support."
                 background="rgb(255, 142, 108)" 
             />
-           </div>
             <ResultsSection />
-            <ResultsSection2 />
-        <div style={{marginTop: "80px"}}>
+            {/* <ResultsSection2 /> */}
+            </div>
+
+         <div style={{marginTop: "80px"}}>
             <Textcon
                     imgSrc="/christmas-tree.png" 
                     badgeText="Funding Initiatives"
@@ -51,7 +53,7 @@ const Home = () => {
                     background="rgb(82, 219, 130)" 
                 />
                 <Success />
-            </div>
+            </div> 
          <div style={{marginTop: "80px"}}>
             <Textcon
                     imgSrc="/christmas-tree.png" 
@@ -73,8 +75,9 @@ const Home = () => {
                     background="rgb(255, 142, 108)" 
 
                 />
+              <TestimonialGrid />
+
             </div>
-                <TestimonialGrid />
 
 
             <div style={{marginTop:"50px"}}></div>

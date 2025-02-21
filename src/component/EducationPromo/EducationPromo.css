@@ -84,30 +84,40 @@
 /* Media query for smaller screens (e.g., tablets and phones) */
 @media (max-width: 768px) {
   .education-promo {
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     padding: 20px;
+    position: relative;
   }
 
   .promo-content {
-    position: relative; /* Remove absolute positioning */
-    left: 0; /* Reset left positioning */
-    text-align: center; /* Center text within the content */
-    max-width: 90%; /* Adjust width for smaller screens */
-    padding: 20px;
+    position: absolute; /* Keep it floating */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering trick */
+    text-align: center;
+    max-width: 100%;
+    width: 200px;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
   }
+
 
   .promo-content h1 {
     width: auto; /* Make heading responsive */
-    font-size: 24px; /* Slightly smaller heading */
+    font-size: 10px; /* Slightly smaller heading */
   }
 
   .promo-content p {
     width: auto; /* Make paragraph responsive */
-    font-size: 0.9rem; /* Slightly smaller font size */
+    font-size: 7px; /* Slightly smaller font size */
   }
-
+  .promo-image {
+    width: 100%;
+  }
   .promo-image img {
-    width: 100%; /* Make image take full width */
+    width: 100%; 
     border-radius: 10px;
   }
 }
@@ -117,12 +127,11 @@
   .promo-content {
     padding: 15px; /* Reduce padding on very small screens */
   }
+  .donate-button {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 7px;
 
-  .promo-content h1 {
-    font-size: 20px; /* Even smaller heading on phones */
   }
-
-  .promo-content p {
-    font-size: 0.85rem; /* Slightly smaller paragraph size */
-  }
-}
+} 
