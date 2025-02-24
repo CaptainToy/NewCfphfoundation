@@ -7,10 +7,10 @@ const ContactSection = () => {
       {/* Left Section */}
       <div className="contact-left">
         <div className="tag">Donations</div>
-        <h2>Why Reach Out to Kindora?</h2>
+        <h2>Why Reach Out to CFPHFoundation?</h2>
         <p>
           We're dedicated to offering personalized guidance and support for any
-          questions you may have about Kindora. Whether you're a donor,
+          questions you may have about CFPHFoundation. Whether you're a donor,
           volunteer, or partner, our team is here to assist you every step of
           the way.
         </p>
@@ -43,7 +43,7 @@ const ContactSection = () => {
       <div className="contact-right">
         <h2>Let’s Chat</h2>
         <p>Want to learn more about us? We are ready to help.</p>
-        <form className="contact-form">
+        <form action="" className="contact-form">
           <label>Your Full Name</label>
           <input type="text" placeholder="Enter your full name" required />
           

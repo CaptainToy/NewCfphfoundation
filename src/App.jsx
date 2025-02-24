@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import './App.css';
 import About from './layout/About';
 import Home from './layout/home';
@@ -11,8 +12,28 @@ import Error from './component/404error/error';
 import ModelCard from './component/ModelCard/model';
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    const hasSeenModal = localStorage.getItem('hasSeenModal');
+    if (!hasSeenModal) {
+      setShowModal(true);
+      localStorage.setItem('hasSeenModal', 'true');
+    }
+  }, []);
+
   return (
     <Router>
+      {/* Modal Overlay */}
+      {showModal && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <ModelCard />
+            <button className="close-button" onClick={() => setShowModal(false)}>Close</button>
+          </div>
+        </div>
+      )}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -21,6 +42,7 @@ function App() {
         <Route path="/blogs" element={<Blog />} />
         <Route path="/review" element={<Reviews />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/ModelCard" element={<ModelCard />} />
         <Route path="*" element={<Error />} /> 
       </Routes>
     </Router>

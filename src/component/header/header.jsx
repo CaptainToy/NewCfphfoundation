@@ -11,15 +11,12 @@ import IMG5 from "../../assets/donnor/IMG-20250215-WA0062.jpg";
 const Header = () => {
   const [showAllPages, setShowAllPages] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-
   const handleDropdownClick = () => {
     setShowAllPages(!showAllPages);
   };
-
   const handleMobileMenuClick = () => {
     setShowMobileMenu(!showMobileMenu);
   };
-
   return (
     <div className="header-container">
       {/* Hero Section */}
@@ -44,13 +41,12 @@ const Header = () => {
           </div>
 
           <div className="header-buttons">
-            <Link to="/donate" className="header-donate-btn">
+            <Link to="/donation" className="header-donate-btn">
               Donate Now
               <div className="icon-container">
                 <i className="bi bi-arrow-right-circle"></i>
               </div>
             </Link>
-            
             <Link to="/learn-more" className="header-learn-btn">Learn More</Link>
           </div>
           

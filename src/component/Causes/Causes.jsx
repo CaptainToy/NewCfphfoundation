@@ -7,7 +7,7 @@ const Causes = () => {
       <div className="causes-content">
         <div className="causes-header">
           <div className="causes-badge-container">
-            <i className="bi bi-bookmark-check"></i>
+            <i className="bi bi-bookmark-check"></i> 
             <span className="causes-badge">Our Causes</span>
           </div>
           <h1 className="causes-title">Explore our life changing Causes</h1>
@@ -26,7 +26,8 @@ const Causes = () => {
               Emphasize the broader community impact, like job creation, improved
               infrastructure, or restored communal spaces.
             </p>
-            <button className="cause-donate-btn">Donate Now</button>
+            
+            <button className="cause-donate-btn"><a href="#"></a>Donate Now</button>
             <div className="cause-goal">
               <span className="goal-label">Goal</span>
               <h3 className="cause-amount">$240,000</h3>

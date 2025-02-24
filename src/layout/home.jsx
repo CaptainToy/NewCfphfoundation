@@ -3,7 +3,6 @@ import "../App.css"
 import Header from "../component/header/header"
 import ImpactCards from "../component/Programs/ImpactCards"
 import ResultsSection from "../component/ResultsSection/ResultsSection"
-import ResultsSection2 from "../component/ResultsSection2/ResultsSection2"
 import Success from "../component/FundingCards/FundingCards"
 import Textcon from "../component/Text/text"
 import CorporatePartnerships from "../component/CorporatePartnerships/CorporatePartnerships"
@@ -41,7 +40,6 @@ const Home = () => {
                 background="rgb(255, 142, 108)" 
             />
             <ResultsSection />
-            {/* <ResultsSection2 /> */}
             </div>
 
          <div style={{marginTop: "80px"}}>

@@ -18,6 +18,7 @@
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/vite": "^4.0.6",
+    "firebase": "^11.3.1",
     "framer-motion": "^12.4.3",
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
@@ -25,6 +26,7 @@
     "react-router-dom": "^7.1.5",
     "set-cookie-parser": "^2.7.1",
     "styled-components": "^6.1.15",
+    "sweetalert2": "^11.17.2",
     "tailwindcss": "^4.0.6"
   },
   "devDependencies": {

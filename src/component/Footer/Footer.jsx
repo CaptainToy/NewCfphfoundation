@@ -15,7 +15,7 @@ const Footer = () => {
             Together, we can make a real impact in communities around the world.
           </p>
           <div className="subscribe">
-            <i className="bi bi-chat-square-text text-squ"></i>
+            {/* <i className="bi bi-chat-square-text text-squ"></i> */}
             <input type="email" placeholder="Enter your email address" />
             <button>Subscribe</button>
           </div>

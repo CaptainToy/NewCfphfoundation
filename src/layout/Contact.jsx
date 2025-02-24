@@ -20,12 +20,13 @@ const Contact = () => {
     return (
         <>
             <Nav/>
-            <div className="">
+            <div style={{marginTop:"50px"}}>
                 <Textcon
                     icon="bi bi-bookmark-tree" // Example icon
                     badgeText="Funding Initiatives"
                     title="Supporting Our Mission"
                     subtitle="Your contributions make a significant difference in the lives of those we serve."
+                    background="rgb(255, 142, 108)"
                 />
                 <Success />
             </div>

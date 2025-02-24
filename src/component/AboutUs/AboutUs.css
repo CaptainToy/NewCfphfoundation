@@ -20,10 +20,24 @@
     flex-direction: column;
     justify-content: flex-start;
   }
+  .about-fill-container{
+    border: 1px solid #333;
+    width: 30%;
+    padding: 5px 20px;
+    border-radius: 20px;
+  }
+  .about-fill-container i{
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgb(255, 142, 108);
+    color: white;
+    margin-left: -10px;
+    margin-right: 10px;
+  }
   .aboutus-badge {
     display: inline-block;
     justify-content: flex-start;
-    background: #ffe082;
     color: #333;
     font-size: 14px;
     padding: 5px 10px;

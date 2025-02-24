@@ -82,8 +82,9 @@ const Donation = () => {
     return (
         <>
             <Nav />
-            <div style={{ marginBottom: "70px" }}>
-                <TextCon />
+            <div style={{ marginBottom: "70px", marginTop: "70px" }}>
+                <TextCon 
+                 background="rgb(255, 142, 108)"/>
                 <TestimonialGrid testimonials={testimonials} />
             </div>
             <DonationComponent />

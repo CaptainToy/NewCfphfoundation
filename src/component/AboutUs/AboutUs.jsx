@@ -3,11 +3,13 @@ import "./AboutUs.css"; // Import the CSS file
 
 const AboutUs = () => {
   return (
-    <section className="aboutus-section">
+    <section className="aboutus-section"> 
       <div className="aboutus-content">
         <div className="about-us-fill">
-            <i className="bi bi-bookmark-check"></i>
-            <span className="aboutus-badge">About Us</span>
+            <div className="about-fill-container">
+              <i className="bi bi-bookmark-check"></i>
+              <span className="aboutus-badge">About Us</span>
+            </div>
             <h1 className="aboutus-title">Know about our mission, vision, and journey</h1>
         </div>
         <div className="aboutus-con">

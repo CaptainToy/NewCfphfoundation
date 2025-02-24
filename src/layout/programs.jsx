@@ -14,11 +14,6 @@ const Programs = () =>{
     return(
         <>
         <Nav/>
-        {/* <Mission
-              title="program"
-              topic="Community Rebuilding"
-              discription="Emphasize the broader community impact, like job creation, improved infrastructure, or restored communal spaces."
-        /> */}
         <Causes/>
         <StatsComponent2/>
         <FAQ/>
