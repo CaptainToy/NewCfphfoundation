@@ -7,7 +7,7 @@ import Nav from "../component/nav/nav"
 import NewCardEdit from "../component/newCardEdit/newcardedit"
 import StatsComponent from "../component/StatsComponent/StatsComponent"
 import Team from "../component/Team/Team"
-import Text from "../component/Text/text"
+import Textcon from "../component/Text/text"
 
 const About = () =>{
     return(
@@ -16,16 +16,32 @@ const About = () =>{
         <AboutUs/>
         <NewCardEdit/>
        <div>
-            <Text/>
+       <Textcon
+                    imgSrc="/christmas-tree.png" 
+                    badgeText="Our Impacts"
+                    title=" CFPHF made an extensive impact"
+                     discription="Together, we can make a real impact in communities around the world. Help us bring hope and support."
+                    background="rgb(82, 219, 130)"
+
+                />
+
             <StatsComponent/>
             <Mission
                 title="Our Mission"
-                topic="Kindora’s work is made possible by a dedicated community"
-                discription="We value transparency and keep our supporters informed about the tangible outcomes of their contributions. Together, we are creating a powerful movement of compassion and action."
+                topic="CFPHF work is made possible by a dedicated community"
+                discription="To alleviate hunger and malnutrition in our community by providing food assistance to vulnerable individuals and families."
+                discription2="A world where everyone has access to nutritious food and a chance to thrive."
             />
        </div>
        <div>
-            <Text/>
+       <Textcon
+                    imgSrc="/christmas-tree.png" 
+                    badgeText="Our Impacts"
+                    title="Meet our incredible team"
+                    subtitle="Together, we can make a real impact in communities around the world. Help us bring hope and support."
+                    background="rgb(82, 219, 130)"
+
+                />
             <Team/>
        </div>
         <DonationComponent/>

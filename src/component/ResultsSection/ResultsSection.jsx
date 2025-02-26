@@ -1,16 +1,19 @@
 import React from "react";
 import "./ResultsSection.css";
+// img
+import IMG1 from "../../assets/img1/3.jpg"
+import IMG2 from "../../assets/img1/2.jpg"
 
 const sampleData = [
   {
-    imgSrc: "https://source.unsplash.com/640x480/?technology",
+    imgSrc: IMG1,
     value: "High-Tech",
     title: "Empowering Families",
     description:
       "We have empowered over 5,000 households by providing food and clothing to the needy, special individuals, elderly, and widows.",
   },
   {
-    imgSrc: "https://source.unsplash.com/640x480/?business",
+    imgSrc: IMG2,
     value: "Fast Track",
     title: "Food Distribution",
     description:
@@ -41,12 +44,12 @@ const ResultsSection = () => {
             <img
               src={item.imgSrc}
               alt={item.label}
-              className="h-80 dark:bg-gray-500 aspect-video"
+              className="h-90 dark:bg-gray-500 aspect-video"
             />
             <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-50">
               <span className="text-xs uppercase dark:text-gray-600">{item.label}</span>
               <h3 className="text-3xl font-bold">{item.title}</h3>
-              <p className="my-6 dark:text-gray-600">{item.description}</p>
+              <p className="my-6 dark:text-gray-600" style={{fontSize:"20px"}}>{item.description}</p>
              
             </div>
           </div>

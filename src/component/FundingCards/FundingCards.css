@@ -61,7 +61,7 @@
 .card-content {
   position: relative;
   z-index: 10;
-  margin-top: 40px;
+  margin-top: 30px;
 
 }
 
@@ -77,7 +77,7 @@
   font-family: "Urbanist", "Urbanist Placeholder", sans-serif;
   font-size: 65px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: -10px;
 }
 
@@ -89,7 +89,7 @@
 
 .card-text {
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 5px;
   color: #333;
   line-height: 1.7;
 }

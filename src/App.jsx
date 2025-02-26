@@ -10,6 +10,7 @@ import Reviews from "./layout/Reviews";
 import Contact from './layout/Contact';
 import Error from './component/404error/error';
 import ModelCard from './component/ModelCard/model';
+import SignUp from './Dashboard/Authentication/Signin';
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -43,6 +44,7 @@ function App() {
         <Route path="/review" element={<Reviews />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/ModelCard" element={<ModelCard />} />
+        <Route path="/SignUp" element={<SignUp />} />
         <Route path="*" element={<Error />} /> 
       </Routes>
     </Router>

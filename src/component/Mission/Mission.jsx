@@ -9,7 +9,7 @@ const StatItem = ({ icon, label, value }) => (
   </div>
 );
 
-const Mission = ({title, topic, discription}) => {
+const Mission = ({title, topic, discription, discription2}) => {
   return (
     <section className="mission-results-section" aria-label="Impactful Programs Results">
       <div className="mission-results-content">
@@ -24,6 +24,7 @@ const Mission = ({title, topic, discription}) => {
           <span className="mission-section-tag">{title}</span>
           <h3 className="mission-content-title">{topic}</h3>
           <p className="mission-content-description">{discription}</p>
+          <p className="mission-content-description">{discription2}</p>
 
           <div className="mission-stats-container">
              <button>Make a Quick Donation</button>

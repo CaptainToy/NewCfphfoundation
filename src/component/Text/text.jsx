@@ -5,11 +5,11 @@ const Textcon = ({
   badgeText = "Impactful metrics", 
   title = "Programs that change lives", 
   subtitle = "Together, we can make a real impact in communities around the world. Help us bring hope and support.",
-  background = "white" // Default background color
+  background = "white" 
 }) => {
-  return (
+  return ( 
     <div className="impact-container" >
-      <div className="text-impact-badge">
+      <div className="text-impact-badge"> 
         <div className="text-badge-icon" style={{ background }}>
           <img src={imgSrc} alt="Badge Icon" />
         </div>

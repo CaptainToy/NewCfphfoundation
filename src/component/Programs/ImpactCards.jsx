@@ -56,22 +56,22 @@ const ImpactCards = () => {
   const impactData = [
     {
       number: 200,
-      text: "Meals Distributed",
-      description: "Ensuring food security for vulnerable families and individuals.",
+      text: "Empowering Children",
+      description: "Education transforms lives, but millions of children worldwide still lack access to the resources they need to learn and grow.",
       bgColor: "red-bg",
       imgSrc: "https://framerusercontent.com/images/GufycZUAYfZyHkpnv1M0kXT5c.png",
     },
     {
       number: 10000,
-      text: "Individuals Supported",
-      description: "Providing resources and aid to those in need. Addressing education and health.",
+      text: "Meals Distributed",
+      description: "Ensuring food security for vulnerable families and individuals",
       bgColor: "black-bg",
       imgSrc: "https://framerusercontent.com/images/rrF0ZMgf5WdsgiDgfNDyKcM.png",
     },
     {
       number: 300,
-      text: "Homes rebuilt successfully",
-      description: "Giving communities access to safe homes and future. Helping families restore lives.",
+      text: "Meals Distributed",
+      description: "Ensuring food security for vulnerable families and individuals.",
       bgColor: "yellow-bg",
       imgSrc: "https://framerusercontent.com/images/3CMcl0tiDC4MBT0srxF6tYiGyI.png?scale-down-to=512",
     },

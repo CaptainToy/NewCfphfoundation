@@ -27,7 +27,8 @@ const Home = () => {
                     badgeText="Impactful metrics"
                     title="Programs that change lives"
                     subtitle="Together, we can make a real impact in communities around the world. Help us bring hope and support."
-                    background="rgb(255, 142, 108)" 
+                    background="rgb(82, 219, 130)" 
+
                 />
              <ImpactCards />
            </div>
@@ -54,11 +55,11 @@ const Home = () => {
             </div> 
          <div style={{marginTop: "80px"}}>
             <Textcon
-                    imgSrc="/christmas-tree.png" 
+                    imgSrc="/mentorship.png"
                     badgeText="Strategic Partnerships"
                     title="Ways you can make a difference"
                     subtitle="We partner with corporations to amplify our impact and reach more communities."
-                    background="rgb(255, 142, 108)" 
+                background="rgb(255, 142, 108)"
                     />
                 <CorporatePartnerships />
             </div>
@@ -70,7 +71,7 @@ const Home = () => {
                     badgeText="Voices of Support"
                     title="Hear from those who believe in our mission"
                     subtitle="Together, we can make a real impact in communities around the world. Help us bring hope and support."
-                    background="rgb(255, 142, 108)" 
+                    background="rgb(82, 219, 130)"
 
                 />
               <TestimonialGrid />

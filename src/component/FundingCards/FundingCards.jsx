@@ -36,7 +36,7 @@ const FundingCards = () => {
         </div>
       ))}
     </div>
-  );
+  ); 
 };
 
 export default FundingCards;

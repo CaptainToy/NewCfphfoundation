@@ -21,17 +21,13 @@ const Causes = () => {
             />
           </div>
           <div className="cause-content">
-            <h2 className="cause-title">Community Rebuilding</h2>
+            <h2 className="cause-title">Empowering Change Through Philanthropy</h2>
             <p className="cause-description">
-              Emphasize the broader community impact, like job creation, improved
-              infrastructure, or restored communal spaces.
+            At Celebrity Food Pantry Home Foundation, we're driven by a passion for giving back. Founded in September 2023 by Mr. Dele Oduyemi and Mrs. Tayo Oduyemi, our organization has been dedicated to supporting the needy, elderly, special people, widows and children in Nigeria.
             </p>
             
             <button className="cause-donate-btn"><a href="#"></a>Donate Now</button>
-            <div className="cause-goal">
-              <span className="goal-label">Goal</span>
-              <h3 className="cause-amount">$240,000</h3>
-            </div>
+          
           </div>
         </div>
       </div>
