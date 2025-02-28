@@ -58,8 +58,9 @@ const Blog = () => {
                     <img src={blogPosts[0].image} alt="" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
                     <div className="p-6 space-y-2 lg:col-span-5">
                         <h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">{blogPosts[0].title}</h3>
-                        <span className="text-xs dark:text-gray-600">{blogPosts[0].date}</span>
                         <p>{blogPosts[0].description}</p>
+                        <span className="text-xs dark:text-gray-600">{blogPosts[0].date}</span>
+
                     </div>
                 </a>
                 <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -68,8 +69,9 @@ const Blog = () => {
                             <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src={post.image} />
                             <div className="p-6 space-y-2">
                                 <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">{post.title}</h3>
-                                <span className="text-xs dark:text-gray-600">{post.date}</span>
                                 <p>{post.description}</p>
+                                <span className="text-xs dark:text-gray-600">{post.date}</span>
+
                             </div>
                         </a>
                     ))}
