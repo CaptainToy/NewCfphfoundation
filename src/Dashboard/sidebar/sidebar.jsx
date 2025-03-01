@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom"; // Import useLocation
+import "boxicons/css/boxicons.min.css";
 
 const sidebarMenu = [
-    { id: 1, icon: "bxs-dashboard", text: "Dashboard" },
-    { id: 2, icon: "bxs-shopping-bag-alt", text: "My Store" },
-    { id: 3, icon: "bxs-doughnut-chart", text: "Analytics" },
-    { id: 4, icon: "bxs-message-dots", text: "Message" },
-    { id: 5, icon: "bxs-group", text: "Team" }
+    { id: 1, icon: "bxs-dashboard", text: "Dashboard", path: "/dashboard" },
+    { id: 2, icon: "bxl-blogger", text: "Add Blog", path: "/add-blog" },
+    { id: 3, icon: "bx bx-calendar-event", text: "Events", path: "/Events" },
+    { id: 4, icon: "bxs-message-dots", text: "Message", path: "/message" },
+    { id: 5, icon: "bxs-group", text: "Team", path: "/team" }
 ];
 
 const sidebarSettings = [
@@ -14,8 +16,11 @@ const sidebarSettings = [
 ];
 
 const Sidebar = () => {
-    const [activeMenu, setActiveMenu] = useState(1);
-    const [isSidebarHidden, setIsSidebarHidden] = useState(window.innerWidth < 768);
+    const location = useLocation();
+    const [activeMenu, setActiveMenu] = useState(null);
+    const [isSidebarHidden, setIsSidebarHidden] = useState(
+        typeof window !== "undefined" ? window.innerWidth < 768 : false
+    );
 
     useEffect(() => {
         const handleResize = () => {
@@ -25,20 +30,27 @@ const Sidebar = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+    useEffect(() => {
+        const activeItem = sidebarMenu.find(item => item.path === location.pathname);
+        if (activeItem) {
+            setActiveMenu(activeItem.id);
+        }
+    }, [location.pathname]);
+
     return (
         <aside id="sidebar" className={isSidebarHidden ? "hide" : ""}>
             <a href="#" className="brand">
                 <i className="bx bxs-smile"></i>
-                <span className="text">AdminHub</span>
+                <span className="text">CFPHF</span>
             </a>
 
             <ul className="side-menu top">
                 {sidebarMenu.map((item) => (
                     <li key={item.id} className={activeMenu === item.id ? "active" : ""}>
-                        <a href="#" onClick={() => setActiveMenu(item.id)}>
+                        <Link to={item.path}>
                             <i className={`bx ${item.icon}`}></i>
                             <span className="text">{item.text}</span>
-                        </a>
+                        </Link>
                     </li>
                 ))}
             </ul>

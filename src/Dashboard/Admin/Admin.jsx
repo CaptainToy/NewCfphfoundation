@@ -1,7 +1,7 @@
-import Content from "../Dashboard/Content/Content";
-import Main from "../Dashboard/Main/Main";
-import Sidebar from "../Dashboard/sidebar/sidebar";
-import "../Dashboard/css/style.css";
+import Content from "../Content/Content";
+import Main from "../Main/Main";
+import Sidebar from "../sidebar/sidebar";
+import "../css/style.css";
 
 const Admin = () => {
     return (

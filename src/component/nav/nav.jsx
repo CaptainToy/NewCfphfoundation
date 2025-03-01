@@ -14,6 +14,7 @@ const products = [
   // { name: 'ModelCard', href: '/ModelCard' },
   { name: 'Blog', href: '/blogs' },
   { name: 'Reviews', href: '/review' },
+  { name: 'Events', href: '/events' },
   { name: 'Contact', href: '/Contact' }
 ]
 

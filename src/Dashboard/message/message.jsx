@@ -1,20 +1,12 @@
 import "boxicons/css/boxicons.min.css"; // Import Boxicons CSS
 
-const Main = () => {
+const MessageTodo = () => {
     // Sample Data
     const boxInfoData = [
-        { id: 1, icon: "bxs-calendar-check", count: 1020, label: "Blog Post" },
-        { id: 2, icon: "bxs-group", count: 2834, label: "Visitors" },
-        { id: 3, icon: "bxs-dollar-circle", count: "2543", label: "Form" }
+        { id: 2, icon: "bxs-group", count: 2834, label: "Message" },
     ];
 
-    const sampleOrders = [
-        { name: "John Doe", date: "01-10-2021"},
-        { name: "Jane Smith", date: "02-10-2021"},
-        { name: "Mark Wilson", date: "03-10-2021" },
-        { name: "Emily Johnson", date: "04-10-2021"},
-        { name: "Michael Brown", date: "05-10-2021"}
-    ];
+ 
 
     const sampleTodos = [
         { task: "Finish React project", completed: true },
@@ -56,39 +48,10 @@ const Main = () => {
 
             {/* Tables & Todos Section */}
             <div className="table-data">
-                {/* Recent Orders Table */}
-                <div className="order">
-                    <div className="head">
-                        <h3>Recent Blogs</h3>
-                        <i className="bx bx-search"></i>
-                        <i className="bx bx-filter"></i>
-                    </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Blog img</th>
-                                <th>Blog Date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {sampleOrders.map((order, index) => (
-                                <tr key={index}>
-                                    <td>
-                                        <img src="img/people.png" alt="User" />
-                                        <p>{order.name}</p>
-                                    </td>
-                                    <td>{order.date}</td>
-                                
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
-
                 {/* Todo List Section */}
                 <div className="todo">
                     <div className="head">
-                        <h3>Todos</h3>
+                        <h3>Message</h3>
                         <i className="bx bx-plus"></i>
                         <i className="bx bx-filter"></i>
                     </div>
@@ -106,4 +69,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default MessageTodo;
