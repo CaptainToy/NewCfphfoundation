@@ -73,7 +73,7 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter your email address"
-              value={email}
+              value={ email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <button onClick={handleSubscribe} disabled={loading}>

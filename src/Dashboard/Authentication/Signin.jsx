@@ -32,7 +32,7 @@ const SignUp = () => {
                 icon: "success",
                 title: "Login Successful",
                 text: "Welcome back!",
-            }).then(() => navigate("/Dashboard"));
+            }).then(() => navigate("/dashboard"));
         } catch (error) {
             setAttempts(attempts + 1);
             Swal.fire({

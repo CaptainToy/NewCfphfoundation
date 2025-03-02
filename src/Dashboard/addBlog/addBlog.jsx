@@ -1,23 +1,10 @@
 import React, { useState } from "react";
+import "../css/style.css";
 import "boxicons/css/boxicons.min.css";
 import AddCard from "./addCard.jsx"; 
 
 const AddBlog = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [blogs, setBlogs] = useState([]);
-
-  useEffect(() => {
-    const fetchBlogs = async () => {
-      try {
-        const response = await databases.listDocuments("YOUR_DATABASE_ID", "YOUR_COLLECTION_ID");
-        setBlogs(response.documents);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchBlogs();
-  }, []);
+ 
 
   const sampleOrders = [
     { name: "John Doe", date: "01-10-2021" },

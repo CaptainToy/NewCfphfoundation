@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom"; // Import useLocation
+import { Link, useLocation } from "react-router-dom";
 import "boxicons/css/boxicons.min.css";
 
 const sidebarMenu = [
-    { id: 1, icon: "bxs-dashboard", text: "Dashboard", path: "/dashboard" },
-    { id: 2, icon: "bxl-blogger", text: "Add Blog", path: "/add-blog" },
-    { id: 3, icon: "bx bx-calendar-event", text: "Events", path: "/Events" },
-    { id: 4, icon: "bxs-message-dots", text: "Message", path: "/message" },
-    { id: 5, icon: "bxs-group", text: "Team", path: "/team" }
+    { id: 1, icon: "bxs-dashboard", text: "Dashboard", path: "/admin/dashboard" },
+    { id: 2, icon: "bxl-blogger", text: "Add Blog", path: "/admin/add-blog" },
+    { id: 3, icon: "bx bx-calendar-event", text: "Events", path: "/admin/events" },
+    { id: 4, icon: "bxs-message-dots", text: "Message", path: "/admin/message" },
+    { id: 5, icon: "bxs-group", text: "Team", path: "/admin/team" }
 ];
 
 const sidebarSettings = [
@@ -18,9 +18,7 @@ const sidebarSettings = [
 const Sidebar = () => {
     const location = useLocation();
     const [activeMenu, setActiveMenu] = useState(null);
-    const [isSidebarHidden, setIsSidebarHidden] = useState(
-        typeof window !== "undefined" ? window.innerWidth < 768 : false
-    );
+    const [isSidebarHidden, setIsSidebarHidden] = useState(window.innerWidth < 768);
 
     useEffect(() => {
         const handleResize = () => {
@@ -66,7 +64,6 @@ const Sidebar = () => {
                 ))}
             </ul>
 
-            {/* Sidebar Toggle Button */}
             <button onClick={() => setIsSidebarHidden(!isSidebarHidden)} className="menu-toggle">
                 <i className="bx bx-menu"></i>
             </button>

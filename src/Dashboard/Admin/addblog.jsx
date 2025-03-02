@@ -7,10 +7,10 @@ import AddBlog from "../addBlog/addBlog";
 const Admin = () => {
     return (
         <div className="admin-container">
-            <Sidebar />
+            {/* <Sidebar /> */}
             <div id="content">
-                <Content />
-                <AddBlog/>
+                {/* <Content /> */}
+                {/* <AddBlog/> */}
                 {/* <Main /> */}
             </div>
         </div>

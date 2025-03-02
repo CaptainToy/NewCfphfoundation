@@ -2,17 +2,22 @@ import Content from "../Content/Content";
 import Main from "../Main/Main";
 import Sidebar from "../sidebar/sidebar";
 import "../css/style.css";
+import Todo from "../Todo/todo";
 
-const Admin = () => {
+const Dashboard = () => {
     return (
         <div className="admin-container">
             <Sidebar />
             <div id="content">
                 <Content />
-                <Main />
+                <Todo/>
+                {/* <Main /> */}
             </div>
         </div>
     );
 };
 
-export default Admin;
+export default Dashboard;
+
+
+

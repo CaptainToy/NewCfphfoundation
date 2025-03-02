@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './App.css';
 import About from './layout/About';
@@ -11,34 +11,29 @@ import Contact from './layout/Contact';
 import Error from './component/404error/error';
 import ModelCard from './component/ModelCard/model';
 import SignUp from './Dashboard/Authentication/Signin';
-import Dashboard from "./Dashboard/Admin/Admin"
-// import AddBlog from './Dashboard/addBlog/addBlog';
-// import Events from './Dashboard/Admin/Event';
-// import Message from './Dashboard/Admin/message';
-// import Team from "./Dashboard/Admin/team"
+import Admin from "./layout/admin"; 
+import Dashboard from './Dashboard/Admin/Admin';
+
 function App() {
-  const [showModal, setShowModal] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(null);
+  const [userRole, setUserRole] = useState(null);
 
   useEffect(() => {
-    const hasSeenModal = localStorage.getItem('hasSeenModal');
-    if (!hasSeenModal) {
-      setShowModal(true);
-      localStorage.setItem('hasSeenModal', 'true');
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (user && user.token && user.role === 'admin') {
+      setIsAuthenticated(true);
+      setUserRole(user.role);
+    } else {
+      setIsAuthenticated(false);
     }
   }, []);
 
+  if (isAuthenticated === null) {
+    return <div>Loading...</div>; // Prevent rendering before authentication check
+  }
+
   return (
     <Router>
-      {/* Modal Overlay */}
-      {showModal && (
-        <div className="modal-overlay">
-          <div className="modal-content">
-            <ModelCard />
-            <button className="close-button" onClick={() => setShowModal(false)}>Close</button>
-          </div>
-        </div>
-      )}
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -46,15 +41,16 @@ function App() {
         <Route path="/donation" element={<Donation />} />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/review" element={<Reviews />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/ModelCard" element={<ModelCard />} />
-        <Route path="/SignUp" element={<SignUp />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
-        {/* <Route path="/Add-Blog" element={<AddBlog />} /> */}
-        {/* <Route path="/Events" element={<Events />} /> */}
-        {/* <Route path="/Message" element={<Message />} /> */}
-        {/* <Route path="/Team" element={<Team />} /> */}
-        <Route path="*" element={<Error />} /> 
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/modelcard" element={<ModelCard />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+
+        {/* Admin Routes */}
+        <Route path="/admin/*" element={<Admin isAuthenticated={isAuthenticated} userRole={userRole} />} />
+
+        {/* 404 Page */}
+        <Route path="*" element={<Error />} />
       </Routes>
     </Router>
   );
