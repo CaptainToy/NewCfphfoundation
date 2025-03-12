@@ -12,12 +12,11 @@ const Admin = ({ isAuthenticated, userRole }) => {
 
     return (
         <Routes>
-            <Route path="/" element={<Navigate to="dashboard" />} />
-            <Route path="dashboard" element={<Dashboard />} />
-            <Route path="add-blog" element={<AddBlog />} />
-            <Route path="events" element={<Event />} />
-            <Route path="message" element={<Message />} />
-            <Route path="team" element={<Team />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/add-blog" element={<AddBlog />} />
+            <Route path="/events" element={<Event />} />
+            <Route path="/message" element={<Message />} />
+            <Route path="/team" element={<Team />} />
         </Routes>
     );
 };

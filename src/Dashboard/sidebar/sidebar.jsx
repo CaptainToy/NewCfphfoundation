@@ -4,7 +4,7 @@ import "boxicons/css/boxicons.min.css";
 
 const sidebarMenu = [
     { id: 1, icon: "bxs-dashboard", text: "Dashboard", path: "/admin/dashboard" },
-    { id: 2, icon: "bxl-blogger", text: "Add Blog", path: "/admin/add-blog" },
+    { id: 2, icon: "bxl-blogger", text: "Add Blog", path: "/add-blog" },
     { id: 3, icon: "bx bx-calendar-event", text: "Events", path: "/admin/events" },
     { id: 4, icon: "bxs-message-dots", text: "Message", path: "/admin/message" },
     { id: 5, icon: "bxs-group", text: "Team", path: "/admin/team" }
