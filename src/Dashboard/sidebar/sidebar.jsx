@@ -3,17 +3,18 @@ import { Link, useLocation } from "react-router-dom";
 import "boxicons/css/boxicons.min.css";
 
 const sidebarMenu = [
-    { id: 1, icon: "bxs-dashboard", text: "Dashboard", path: "/admin/dashboard" },
+    { id: 1, icon: "bxs-dashboard", text: "Dashboard", path: "/dashboard" },
     { id: 2, icon: "bxl-blogger", text: "Add Blog", path: "/add-blog" },
-    { id: 3, icon: "bx bx-calendar-event", text: "Events", path: "/admin/events" },
-    { id: 4, icon: "bxs-message-dots", text: "Message", path: "/admin/message" },
-    { id: 5, icon: "bxs-group", text: "Team", path: "/admin/team" }
+    { id: 3, icon: "bx bx-calendar-event", text: "Events", path: "/events" },
+    { id: 4, icon: "bxs-message-dots", text: "Message", path: "/message" },
+    { id: 5, icon: "bxs-group", text: "Team", path: "/team" }
 ];
 
 const sidebarSettings = [
-    { id: 6, icon: "bxs-cog", text: "Settings" },
-    { id: 7, icon: "bxs-log-out-circle", text: "Logout" }
+    { id: 6, icon: "bxs-cog", text: "Settings", path: "/settings" },
+    { id: 7, icon: "bxs-log-out-circle", text: "Logout", path: "/" }
 ];
+
 
 const Sidebar = () => {
     const location = useLocation();

@@ -15,7 +15,7 @@ const Header = () => {
     setShowAllPages(!showAllPages);
   };
   const handleMobileMenuClick = () => {
-    setShowMobileMenu(!showMobileMenu);
+    setShowMobileMenu(!showMobileMenu); 
   };
   return (
     <div className="header-container">

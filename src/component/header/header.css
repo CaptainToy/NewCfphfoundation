@@ -410,7 +410,7 @@
         margin-left: 0;
         font-size: 1.2rem;
         line-height: 1.5rem;
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     .header-right-img {
@@ -442,7 +442,7 @@
         font-size: 17px;
     }
     .header-donor-img {
-        width: 20px;
+        width: 20px; 
         height: 20px;
         border-radius: 50%;
     }
@@ -450,34 +450,34 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        /* margin-top: 20px; */
+        margin-top: 10px;
     }
        
     .header-donate-btn{
-        font-size: 15px;
-        padding: 13px 20px;
+        font-size: 13px;
+        padding: 13px 40px;
     }
      .header-learn-btn {
         font-size: 15px;
         padding: 10px 15px;
-        margin-right: 45%;
+        margin-right: 42%;
     }
     .icon-container {
         background-color: black;
         border-radius: 50%;
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
     }
     .icon-container i {
         z-index: 1;
         padding: 10px;
-        font-size: 30px;
+        font-size: 20px;
         background: transparent;
         color: white;
         padding: 50px;
     }
     .header-partners {
-        margin-left: -20px;
+        margin-top: 40px;
     }
     .header-partners span{
         font-size: 25px;
