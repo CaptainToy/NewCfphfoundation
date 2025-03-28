@@ -9,7 +9,7 @@ const AboutUs = () => {
             <div className="about-fill-container">
               <i className="bi bi-bookmark-check"></i>
               <span className="aboutus-badge">About Us</span>
-            </div>
+            </div> 
             <h1 className="aboutus-title">Know about our mission, vision, and journey</h1>
         </div>
         <div className="aboutus-con">

@@ -1,33 +1,11 @@
-import "boxicons/css/boxicons.min.css"; // Import Boxicons CSS
+import "boxicons/css/boxicons.min.css"; 
 
-const Todo = () => {
-    // Sample Data
-    const boxInfoData = [
-        { id: 2, icon: "bxs-group", count: 2834, label: "Visitors" },
-        { id: 3, icon: "bxs-dollar-circle", count: "2543", label: "Form" }
-    ];
-
-    const sampleOrders = [
-        { name: "John Doe", date: "01-10-2021"},
-        { name: "Jane Smith", date: "02-10-2021"},
-        { name: "Mark Wilson", date: "03-10-2021" },
-        { name: "Emily Johnson", date: "04-10-2021"},
-        { name: "Michael Brown", date: "05-10-2021"}
-    ];
-
-    const sampleTodos = [
-        { task: "Finish React project", completed: true },
-        { task: "Update dashboard UI", completed: true },
-        { task: "Fix bug in authentication", completed: false },
-        { task: "Write documentation", completed: true },
-        { task: "Optimize performance", completed: false }
-    ];
-
+const Todo = ({ boxInfoData, sampleTodos, title }) => {
     return (
         <main>
             <div className="head-title">
                 <div className="left">
-                    <h1>Dashboard</h1>
+                    <h1>{title}</h1> 
                     <ul className="breadcrumb">
                         <li>
                             <a href="#">Dashboard</a>
@@ -50,7 +28,7 @@ const Todo = () => {
                             <p>{item.label}</p>
                         </span>
                     </li>
-                ))}
+                ))} 
             </ul>
 
             {/* Tables & Todos Section */}
@@ -58,7 +36,7 @@ const Todo = () => {
                 {/* Todo List Section */}
                 <div className="todo">
                     <div className="head">
-                        <h3>Todos</h3>
+                        <h3>{title}</h3> {/* Use title prop instead of item.title */}
                         <i className="bx bx-plus"></i>
                         <i className="bx bx-filter"></i>
                     </div>

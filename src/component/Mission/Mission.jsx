@@ -20,7 +20,7 @@ const Mission = ({title, topic, discription, discription2}) => {
           />
         </div>
 
-        <div className="mission-text-content">
+        <div className="mission-text-content"> 
           <span className="mission-section-tag">{title}</span>
           <h3 className="mission-content-title">{topic}</h3>
           <p className="mission-content-description">{discription}</p>

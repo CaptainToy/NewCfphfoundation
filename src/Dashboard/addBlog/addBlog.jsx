@@ -1,10 +1,12 @@
-import React, { useState } from "react";
-import "../css/style.css";
+import React from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "boxicons/css/boxicons.min.css";
-import AddCard from "./addCard.jsx"; 
 
 const AddBlog = () => {
- 
+  const navigate = useNavigate(); 
+  const handleNavigate = () => {
+    navigate("/Admin/add-post");  
+  };
 
   const sampleOrders = [
     { name: "John Doe", date: "01-10-2021" },
@@ -31,9 +33,10 @@ const AddBlog = () => {
         <div className="order">
           <div className="head">
             <h3>Recent Blogs</h3>
-            <i className="bx bx-plus cursor-pointer text-xl" onClick={() => setIsModalOpen(true)}></i>
+            <i className="bx bx-plus cursor-pointer text-xl" onClick={handleNavigate}></i> 
             <i className="bx bx-filter text-xl"></i>
           </div>
+
           <table>
             <thead>
               <tr>

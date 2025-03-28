@@ -28,6 +28,17 @@ function App() {
     }
   }, []);
 
+  // Track user visits
+  useEffect(() => {
+    const visitCount = localStorage.getItem('visitCount');
+    if (visitCount) {
+      localStorage.setItem('visitCount', Number(visitCount) + 1);
+    } else {
+      localStorage.setItem('visitCount', 1);
+    }
+    console.log(`Total Visits: ${localStorage.getItem('visitCount')}`);
+  }, []);
+
   if (isAuthenticated === null) {
     return <div className="w-16 h-16 border-4 border-dashed rounded-full animate-spin dark:border-lime-600"></div>; 
   }
@@ -47,8 +58,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
 
         {/* Admin Routes */}
-        <Route path="/admin/*" element={<Admin isAuthenticated={isAuthenticated} userRole={userRole} />} />
-
+        <Route path="/admin/*" element={<Admin />} />
         {/* 404 Page */}
         <Route path="*" element={<Error />} />
       </Routes>

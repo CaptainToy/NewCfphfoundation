@@ -3,19 +3,19 @@ import { Link, useLocation } from "react-router-dom";
 import "boxicons/css/boxicons.min.css";
 
 const sidebarMenu = [
-    { id: 1, icon: "bxs-dashboard", text: "Dashboard", path: "/dashboard" },
-    { id: 2, icon: "bxl-blogger", text: "Add Blog", path: "/add-blog" },
-    { id: 3, icon: "bx bx-calendar-event", text: "Events", path: "/events" },
-    { id: 4, icon: "bxs-message-dots", text: "Message", path: "/message" },
-    { id: 5, icon: "bxs-group", text: "Team", path: "/team" }
+    { id: 1, icon: "bxs-dashboard", text: "Dashboard", path: "/admin/Admin" },
+    { id: 2, icon: "bxl-blogger", text: "Blog", path: "/admin/BlogPost" },
+    { id: 2, icon: "bxl-blogger", text: "Add Blog", path: "/admin/add-post" },
+    { id: 3, icon: "bx bx-calendar-event", text: "Events", path: "/admin/events" },
+    { id: 4, icon: "bxs-message-dots", text: "Message", path: "/admin/message" },
+    { id: 5, icon: "bxs-group", text: "Team", path: "/admin/team" },
 ];
 
 const sidebarSettings = [
-    { id: 6, icon: "bxs-cog", text: "Settings", path: "/settings" },
-    { id: 7, icon: "bxs-log-out-circle", text: "Logout", path: "/" }
+    { id: 6, icon: "bxs-cog", text: "Settings", path: "/admin/settings" },
+    { id: 6, icon: "bxs-shuffle", text: "Add User", path: "/admin/Adduser" },
+    { id: 7, icon: "bxs-log-out-circle", text: "Logout", path: "/signin" }
 ];
-
-
 const Sidebar = () => {
     const location = useLocation();
     const [activeMenu, setActiveMenu] = useState(null);
@@ -30,18 +30,15 @@ const Sidebar = () => {
     }, []);
 
     useEffect(() => {
-        const activeItem = sidebarMenu.find(item => item.path === location.pathname);
-        if (activeItem) {
-            setActiveMenu(activeItem.id);
-        }
+        setActiveMenu(sidebarMenu.find(item => item.path === location.pathname)?.id || null);
     }, [location.pathname]);
 
     return (
         <aside id="sidebar" className={isSidebarHidden ? "hide" : ""}>
-            <a href="#" className="brand">
+            <Link to="/" className="brand">
                 <i className="bx bxs-smile"></i>
                 <span className="text">CFPHF</span>
-            </a>
+            </Link>
 
             <ul className="side-menu top">
                 {sidebarMenu.map((item) => (
@@ -57,10 +54,10 @@ const Sidebar = () => {
             <ul className="side-menu">
                 {sidebarSettings.map((item) => (
                     <li key={item.id}>
-                        <a href="#">
+                        <Link to={item.path}>
                             <i className={`bx ${item.icon}`}></i>
                             <span className="text">{item.text}</span>
-                        </a>
+                        </Link>
                     </li>
                 ))}
             </ul>

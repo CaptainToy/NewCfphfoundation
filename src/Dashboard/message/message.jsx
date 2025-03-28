@@ -1,21 +1,6 @@
 import "boxicons/css/boxicons.min.css"; // Import Boxicons CSS
 
-const MessageTodo = () => {
-    // Sample Data
-    const boxInfoData = [
-        { id: 2, icon: "bxs-group", count: 2834, label: "Message" },
-    ];
-
- 
-
-    const sampleTodos = [
-        { task: "Finish React project", completed: true },
-        { task: "Update dashboard UI", completed: true },
-        { task: "Fix bug in authentication", completed: false },
-        { task: "Write documentation", completed: true },
-        { task: "Optimize performance", completed: false }
-    ];
-
+const MessageTodo = ({ boxInfoData, sampleTodos }) => {
     return (
         <main>
             <div className="head-title">
@@ -48,7 +33,6 @@ const MessageTodo = () => {
 
             {/* Tables & Todos Section */}
             <div className="table-data">
-                {/* Todo List Section */}
                 <div className="todo">
                     <div className="head">
                         <h3>Message</h3>

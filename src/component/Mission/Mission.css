@@ -110,3 +110,113 @@
     color: #333;
     font-weight: 600;
 }
+
+
+/* Large Screens (Desktops & Laptops) */
+@media (max-width: 1200px) {
+    .mission-content-title,
+    .mission-content-description {
+        width: 100%;
+        font-size: 30px;
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .mission-image-container img {
+        width: 500px;
+        border-radius: 50px;
+    }
+}
+
+/* Medium Screens (Tablets & Small Laptops) */
+@media (max-width: 992px) {
+    .mission-results-content {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .mission-image-container img {
+        width: 400px;
+    }
+
+    .mission-content-title {
+        font-size: 28px;
+    }
+
+    .mission-content-description {
+        font-size: 18px;
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+/* Small Screens (Tablets & Large Phones) */
+@media (max-width: 768px) {
+    .mission-results-section {
+        padding: 40px;
+    }
+
+    .mission-content-title {
+        font-size: 24px;
+        margin-left: -2%;
+        line-height: 150%;
+    }
+
+    .mission-content-description {
+        font-size: 16px;
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        margin-left: -2%;
+        /* line-height: 120%; */
+    }
+
+    .mission-image-container img {
+        width: 100%;
+        border-radius: 30px;
+        margin-bottom: -20%;
+    }
+
+    .mission-section-tag{
+        margin-left: 0;
+        margin-top: -30%;
+    }
+    .mission-stats-container {
+        margin-left: 0;
+        margin-top: -30%;
+    }
+}
+
+/* Extra Small Screens (Mobile Phones) */
+@media (max-width: 576px) {
+    .mission-results-section {
+        padding: 20px;
+    }
+
+    .mission-content-title {
+        font-size: 20px;
+    }
+
+    .mission-content-description {
+        font-size: 14px;
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .mission-results-header {
+        margin-bottom: 20px;
+    }
+
+    .mission-image-container img {
+        border-radius: 20px;
+    }
+
+    .mission-stats-container button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}

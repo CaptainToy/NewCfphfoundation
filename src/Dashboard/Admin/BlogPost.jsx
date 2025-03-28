@@ -4,27 +4,27 @@ import Sidebar from "../sidebar/sidebar";
 import "../css/style.css";
 import Todo from "../Todo/todo";
 
-const Events = () => {
+const BlogPost = () => {
     // Sample data for props
     const boxInfoData = [
-        { id: 1, icon: "bx-user", count: 100, label: "Users" },
-        { id: 2, icon: "bx-cart", count: 50, label: "Orders" },
-        { id: 3, icon: "bx-dollar", count: "$5K", label: "Revenue" },
+        { id: 1, icon: "bx-book", count: 10, label: "Total Posts" },
+        { id: 2, icon: "bx-message", count: 45, label: "Comments" },
+        { id: 3, icon: "bx-like", count: 120, label: "Likes" },
     ];
 
     const sampleTodos = [
-        { task: "Fix bug in login form", completed: false },
-        { task: "Review pull request", completed: true },
-        { task: "Update documentation", completed: false },
+        { task: "Write new blog post", completed: false },
+        { task: "Edit previous post", completed: true },
+        { task: "Reply to comments", completed: false },
     ];
 
     return (
         <div className="admin-container">
             <Sidebar />
-            <div id="content"> 
+            <div id="content">
                 <Content />
                 <Todo 
-                    title="Event Post" 
+                    title="Blog Manager" 
                     boxInfoData={boxInfoData} 
                     sampleTodos={sampleTodos} 
                 />
@@ -34,4 +34,4 @@ const Events = () => {
     );
 };
 
-export default Events;
+export default BlogPost;

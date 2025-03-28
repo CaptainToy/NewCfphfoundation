@@ -80,3 +80,89 @@
     margin-top: -12px;
   }
   
+
+  /* Default styles for large screens (above 1200px) are already set */
+
+/* Extra large devices (1200px and down) */
+@media (max-width: 1200px) {
+  .StatsComponent-counterContainer {
+      width: 100%;
+      padding: 40px;
+  }
+  .StatsComponent-counterWrapper {
+      width: 220px;
+  }
+}
+
+/* Large devices (992px and down) */
+@media (max-width: 992px) {
+  .StatsComponent-counterContainer {
+      padding: 30px;
+      gap: 20px;
+  }
+  .StatsComponent-counterWrapper {
+      width: 200px;
+  }
+  .StatsComponent-counterNumber,
+  .StatsComponent-counterUnit {
+      font-size: 50px;
+  }
+}
+
+/* Medium devices (768px and down) */
+@media (max-width: 768px) {
+  .StatsComponent-counterContainer {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      border-radius: 20px;
+  }
+  .StatsComponent-counterWrapper {
+      width: 100%;
+      max-width: 250px;
+      padding: 15px;
+  }
+  .StatsComponent-counterNumber,
+  .StatsComponent-counterUnit {
+      font-size: 40px;
+  }
+  .StatsComponent-counterDescription {
+      font-size: 14px;
+  }
+}
+
+/* Small devices (576px and down) */
+@media (max-width: 576px) {
+  .StatsComponent-counterContainer {
+      padding: 15px;
+      gap: 15px;
+  }
+  .StatsComponent-counterWrapper {
+      width: 90%;
+      max-width: 250px;
+  }
+  .StatsComponent-counterNumber,
+  .StatsComponent-counterUnit {
+      font-size: 35px;
+  }
+  .StatsComponent-counterDescription {
+      font-size: 13px;
+  }
+}
+
+/* Extra small devices (400px and down) */
+@media (max-width: 400px) {
+  .StatsComponent-counterContainer {
+      padding: 10px;
+  }
+  .StatsComponent-counterWrapper {
+      max-width: 220px;
+  }
+  .StatsComponent-counterNumber,
+  .StatsComponent-counterUnit {
+      font-size: 30px;
+  }
+  .StatsComponent-counterDescription {
+      font-size: 12px;
+  }
+}
